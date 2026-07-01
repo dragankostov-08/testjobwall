@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Activity, Briefcase, Building2, MonitorSmartphone, DollarSign } from "lucide-react";
+import { Activity } from "lucide-react";
 
 type MarketData = {
   snapshot: {
@@ -12,6 +12,32 @@ type MarketData = {
   };
   jobWallIndex: { score: number; status: string; growthMod: number };
 };
+
+function SplitGauge({ title, val1, val2 }: { title: string, val1: number | string, val2: number | string }) {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <h3 className="text-[11px] font-semibold text-slate-300 mb-3 uppercase tracking-wider">{title}</h3>
+      <div className="relative w-[60px] h-[60px]">
+        {/* Background circle */}
+        <svg className="absolute inset-0 w-full h-full transform -rotate-90">
+          <circle cx="30" cy="30" r="26" stroke="#334155" strokeWidth="5" fill="transparent" />
+          {/* Top-Left Arc (Orange) - approx 40% of circle */}
+          <circle cx="30" cy="30" r="26" stroke="#f97316" strokeWidth="5" fill="transparent"
+            strokeDasharray="163.3"
+            strokeDashoffset="98" 
+            strokeLinecap="round"
+          />
+          {/* Diagonal Line */}
+          <line x1="30" y1="12" x2="12" y2="48" stroke="#475569" strokeWidth="1.5" transform="rotate(-45 30 30)" />
+        </svg>
+        <div className="absolute inset-0 flex flex-col justify-between py-[12px] px-[12px]">
+          <span className="text-orange-500 font-bold text-[13px] self-start leading-none -mt-1">{val1}</span>
+          <span className="text-emerald-500 font-bold text-[13px] self-end leading-none -mb-1">{val2}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function IndexWidget() {
   const [data, setData] = useState<MarketData | null>(null);
@@ -37,39 +63,28 @@ export default function IndexWidget() {
 
   if (loading) {
     return (
-      <div className="bg-card border border-border rounded-xl p-6 flex items-center justify-center min-h-[160px] mb-6">
-        <Activity className="w-6 h-6 text-primary animate-pulse" />
+      <div className="bg-[#0f172a] border border-slate-800 rounded-xl p-6 flex items-center justify-center min-h-[140px] mb-8">
+        <Activity className="w-6 h-6 text-slate-500 animate-pulse" />
       </div>
     );
   }
 
   if (error || !data) {
-    return null; // Silently fail on homepage if index is down
+    return null; 
   }
 
-  const { jobWallIndex } = data;
+  const { snapshot, jobWallIndex } = data;
 
   return (
-    <Link href="/market-pulse" className="block group">
-      <div className="flex flex-col items-center justify-center">
-        <h3 className="text-[13px] font-bold text-muted-foreground mb-3 uppercase tracking-widest">ИНДЕКС</h3>
-        <div className="relative mb-3">
-          <svg className="w-20 h-20 transform -rotate-90">
-            <circle cx="40" cy="40" r="34" stroke="currentColor" strokeWidth="8" fill="transparent" className="text-muted/20" />
-            <circle cx="40" cy="40" r="34" stroke="currentColor" strokeWidth="8" fill="transparent"
-              strokeDasharray="213.6"
-              strokeDashoffset={213.6 - (213.6 * jobWallIndex.score) / 100}
-              className={jobWallIndex.score > 70 ? "text-emerald-500" : jobWallIndex.score > 40 ? "text-amber-500" : "text-red-500"}
-              strokeLinecap="round"
-            />
-          </svg>
-          <div className="absolute inset-0 flex items-center justify-center flex-col">
-            <span className="text-2xl font-black text-foreground tracking-tighter">{jobWallIndex.score}</span>
-          </div>
+    <Link href="/market-pulse" className="block group mb-8">
+      <div className="bg-[#0f172a] border border-slate-800/60 rounded-xl p-5 md:p-6 hover:border-slate-700 transition-colors">
+        <div className="flex flex-wrap items-center justify-around gap-6">
+          <SplitGauge title="ИНДЕКС" val1={jobWallIndex.score} val2={jobWallIndex.growthMod || 11} />
+          <SplitGauge title="НОВИ ОГЛАСИ" val1={snapshot.newJobs} val2={snapshot.prevNewJobs} />
+          <SplitGauge title="КОМПАНИИ" val1={snapshot.activeCompanies} val2={snapshot.newCompanies} />
+          <SplitGauge title="БАЗА ОГЛАСИ" val1={snapshot.activeJobs} val2={snapshot.remoteJobs} />
+          <SplitGauge title="ПЛАТА" val1={snapshot.salaryJobs} val2="-" />
         </div>
-        <p className={`text-sm font-black uppercase tracking-wide ${jobWallIndex.score > 70 ? "text-emerald-500" : jobWallIndex.score > 40 ? "text-amber-500" : "text-red-500"}`}>
-          {jobWallIndex.status}
-        </p>
       </div>
     </Link>
   );

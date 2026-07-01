@@ -4,6 +4,8 @@ import SidebarNewsWidget from "@/components/layout/SidebarNewsWidget";
 import TopHiringWidget from "@/components/layout/TopHiringWidget";
 
 import { Clock } from "lucide-react";
+import LoadMoreJobs from "@/components/jobs/LoadMoreJobs";
+import { fetchMoreJobs } from "@/app/actions/jobActions";
 
 export const metadata = {
   title: "Најнови Огласи | JobWall.mk",
@@ -42,6 +44,12 @@ export default async function LatestJobsPage() {
           color="#3b82f6"
           jobs={latestJobs}
           maxJobs={20}
+          hideTitle={true}
+        />
+        <LoadMoreJobs
+          fetchAction={fetchMoreJobs}
+          params={{ section: "latest", limit: 20 }}
+          initialJobsLength={latestJobs.length}
         />
       </div>
 

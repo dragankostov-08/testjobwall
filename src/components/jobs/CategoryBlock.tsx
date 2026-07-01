@@ -30,7 +30,7 @@ export default function CategoryBlock({ title, slug, color, jobs }: CategoryBloc
       </div>
       
       <div className="space-y-3">
-        {jobs.slice(0, 3).map(job => (
+        {jobs.slice(0, 2).map(job => (
           <JobCard key={job.id} job={job} />
         ))}
       </div>

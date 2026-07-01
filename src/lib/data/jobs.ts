@@ -6,6 +6,7 @@ export interface GetJobsParams {
   remote?: boolean;
   section?: string;
   limit?: number;
+  offset?: number;
   search?: string;
   location?: string;
   source?: string;
@@ -16,11 +17,12 @@ export async function getJobs({
   remote: isRemote,
   section,
   limit = 10,
+  offset = 0,
   search,
   location,
   source
 }: GetJobsParams) {
-  const cacheKey = `jobs:${category || 'all'}:remote:${isRemote}:section:${section || 'default'}:${limit}:search:${search || ''}:loc:${location || ''}:src:${source || ''}`;
+  const cacheKey = `jobs:${category || 'all'}:remote:${isRemote}:section:${section || 'default'}:${limit}:offset:${offset}:search:${search || ''}:loc:${location || ''}:src:${source || ''}`;
   
   try {
     // 1. Try to fetch from Redis Cache (skip cache for search queries)
@@ -95,9 +97,14 @@ export async function getJobs({
         .order('created_at', { ascending: false });
     }
 
-    // Fetch more items than requested to allow for diversity filtering
-    const fetchLimit = limit * 5;
-    query = query.limit(fetchLimit);
+    // Fetch more items than requested to allow for diversity filtering on first page
+    const fetchLimit = offset === 0 ? limit * 5 : limit;
+    
+    if (offset > 0) {
+      query = query.range(offset, offset + fetchLimit - 1);
+    } else {
+      query = query.limit(fetchLimit);
+    }
 
     const { data, error } = await query;
 
@@ -161,7 +168,13 @@ export async function getJobs({
       diverseJobs.push(deferredJobs.shift());
     }
 
-    const finalJobs = diverseJobs.slice(0, limit);
+    let finalJobs = diverseJobs.slice(0, limit);
+
+    // If we're paginating, we don't apply the diversity filter as aggressively 
+    // to avoid losing jobs that were skipped in previous pages.
+    if (offset > 0) {
+      finalJobs = formattedJobs.slice(0, limit);
+    }
 
     // 3. Cache the result for 5 minutes (skip caching search results)
     if (!search) {

@@ -6,31 +6,27 @@ import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 
 import { getJobs } from "@/lib/data/jobs";
+import LoadMoreJobs from "@/components/jobs/LoadMoreJobs";
+import { fetchMoreJobs } from "@/app/actions/jobActions";
+
 export const revalidate = 60;
 
-async function fetchCategoryJobs(category: string): Promise<Job[]> {
+function getDbCategory(slug: string): string {
+  if (slug === 'remote') return '';
+  const map: Record<string, string> = {
+    'it': 'IT', 'design': 'Design', 'marketing': 'Marketing', 'sales': 'Sales',
+    'hr': 'HR', 'finance': 'Finance', 'admin': 'Admin', 'management': 'Management',
+    'logistics': 'Logistics', 'production': 'Production', 'engineering': 'Engineering',
+    'hospitality': 'Hospitality', 'legal': 'Legal', 'healthcare': 'Healthcare',
+    'cleaning': 'Cleaning', 'other': 'Останато'
+  };
+  return map[slug] || slug;
+}
+
+async function fetchCategoryJobs(category: string, dbCategory: string): Promise<Job[]> {
   if (category === 'remote') {
     return (await getJobs({ remote: true, limit: 50 })) || [];
   }
-  
-  let dbCategory = category;
-  if (category === 'it') dbCategory = "IT";
-  if (category === 'design') dbCategory = "Design";
-  if (category === 'marketing') dbCategory = "Marketing";
-  if (category === 'sales') dbCategory = "Sales";
-  if (category === 'hr') dbCategory = "HR";
-  if (category === 'finance') dbCategory = "Finance";
-  if (category === 'admin') dbCategory = "Admin";
-  if (category === 'management') dbCategory = "Management";
-  if (category === 'logistics') dbCategory = "Logistics";
-  if (category === 'production') dbCategory = "Production";
-  if (category === 'engineering') dbCategory = "Engineering";
-  if (category === 'hospitality') dbCategory = "Hospitality";
-  if (category === 'legal') dbCategory = "Legal";
-  if (category === 'healthcare') dbCategory = "Healthcare";
-  if (category === 'cleaning') dbCategory = "Cleaning";
-  if (category === 'other') dbCategory = "Останато";
-  
   return (await getJobs({ category: dbCategory, limit: 50 })) || [];
 }
 
@@ -46,7 +42,8 @@ export default async function CategoryPage({ params }: { params: { slug: string 
     notFound();
   }
 
-  const jobs = await fetchCategoryJobs(slug);
+  const dbCategory = getDbCategory(slug);
+  const jobs = await fetchCategoryJobs(slug, dbCategory);
   
   const titleMap: Record<string, string> = {
     'it': 'IT Огласи',
@@ -87,11 +84,18 @@ export default async function CategoryPage({ params }: { params: { slug: string 
       </div>
       
       {jobs.length > 0 ? (
-        <div className="space-y-4">
-          {jobs.map(job => (
-            <JobCard key={job.id} job={job} />
-          ))}
-        </div>
+        <>
+          <div className="space-y-4">
+            {jobs.map(job => (
+              <JobCard key={job.id} job={job} />
+            ))}
+          </div>
+          <LoadMoreJobs
+            fetchAction={fetchMoreJobs}
+            params={slug === 'remote' ? { remote: true, limit: 50 } : { category: dbCategory, limit: 50 }}
+            initialJobsLength={jobs.length}
+          />
+        </>
       ) : (
         <div className="text-center py-12 bg-card border border-border rounded-lg">
           <p className="text-muted-foreground">Нема активни огласи во оваа категорија во моментов.</p>

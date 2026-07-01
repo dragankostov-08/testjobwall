@@ -25,7 +25,7 @@ export default async function Home(
 
   const [
     // Feed sections
-    featuredJobs, remoteTopJobs,
+    featuredJobs,
     // Category jobs
     itJobs, marketingJobs, salesJobs, financeJobs, adminJobs,
     engineeringJobs, healthcareJobs, hospitalityJobs, logisticsJobs,
@@ -34,7 +34,6 @@ export default async function Home(
   ] = await Promise.all([
     // Feed sections — Featured first
     fetchJobs(undefined, false, 'featured', 5, source),
-    fetchJobs(undefined, true, undefined, 5, source),
     // Category jobs — organized by requested order
     fetchJobs('IT', undefined, undefined, undefined, source),
     fetchJobs('Marketing', undefined, undefined, undefined, source),
@@ -94,14 +93,7 @@ export default async function Home(
         <SalaryCalculatorPromo />
 
         {/* Remote Jobs */}
-        <FeedSection
-          title="Далечински Работи"
-          icon={Globe}
-          color="#06b6d4"
-          jobs={remoteTopJobs}
-          viewMoreHref="/category/remote"
-          maxJobs={5}
-        />
+        <CategoryBlock title="Далечински Работи" slug="remote" color="#06b6d4" jobs={remoteJobs} />
 
         {/* Category Blocks — Organized by requested categories */}
         <CategoryBlock title="IT & Software" slug="it" color="#3b82f6" jobs={itJobs} />
@@ -124,7 +116,6 @@ export default async function Home(
         <CategoryBlock title="Право" slug="legal" color="#64748b" jobs={legalJobs} />
         <CategoryBlock title="Хигиена" slug="cleaning" color="#38bdf8" jobs={cleaningJobs} />
         <CategoryBlock title="Останати" slug="other" color="#94a3b8" jobs={otherJobs} />
-        <CategoryBlock title="Далечински работи" slug="remote" color="#06b6d4" jobs={remoteJobs} />
       </div>
 
       {/* Right Rail (Widgets) */}

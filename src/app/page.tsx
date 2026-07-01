@@ -56,9 +56,8 @@ export default async function Home(
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-      {/* Main Content (Left Column) */}
+      {/* Top Left: Main Feed & First Categories */}
       <div className="lg:col-span-8">
-        
         {source && (
           <div className="bg-indigo-500/10 border border-indigo-500/20 rounded-xl p-4 mb-6 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -73,10 +72,8 @@ export default async function Home(
           </div>
         )}
 
-        {/* Search Bar */}
         <JobsSearchBar />
 
-        {/* Featured Jobs — First */}
         <FeedSection
           title="Истакнати Огласи"
           icon={Star}
@@ -85,34 +82,51 @@ export default async function Home(
           maxJobs={5}
           hideTitle={true}
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
-          {/* Index Widget - Full width */}
-          <div className="md:col-span-2 mb-4">
-            <IndexWidget />
-          </div>
-
-          {/* First row of categories */}
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           <CategoryBlock title="Далечински Работи" slug="remote" color="#06b6d4" jobs={remoteJobs} />
           <CategoryBlock title="IT & Software" slug="it" color="#3b82f6" jobs={itJobs} />
-          
-          {/* Tool Promo 1 - Full width */}
-          <div className="md:col-span-2 my-2">
-            <SalaryCalculatorPromo />
-          </div>
-
-          {/* More categories */}
           <CategoryBlock title="Маркетинг" slug="marketing" color="#8b5cf6" jobs={marketingJobs} />
           <CategoryBlock title="Продажба" slug="sales" color="#10b981" jobs={salesJobs} />
+        </div>
+      </div>
+
+      {/* Top Right: Sidebar */}
+      <div className="lg:col-span-4 space-y-8 pt-2">
+        <div className="bg-card border border-border rounded-xl p-6 flex justify-center">
+          <IndexWidget />
+        </div>
+        <SidebarNewsWidget />
+      </div>
+
+      {/* Full Width Tool Promo 1 */}
+      <div className="col-span-full">
+        <SalaryCalculatorPromo />
+      </div>
+
+      {/* Middle Left: More Categories */}
+      <div className="lg:col-span-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           <CategoryBlock title="Финансии" slug="finance" color="#ef4444" jobs={financeJobs} />
           <CategoryBlock title="Администрација" slug="admin" color="#14b8a6" jobs={adminJobs} />
-          
-          {/* Tool Promo 2 - Full width */}
-          <div className="md:col-span-2 my-2">
-            <VacationCalculatorPromo />
-          </div>
-
           <CategoryBlock title="Инженерство и Одржување" slug="engineering" color="#0ea5e9" jobs={engineeringJobs} />
           <CategoryBlock title="Здравство" slug="healthcare" color="#14b8a6" jobs={healthcareJobs} />
+        </div>
+      </div>
+
+      {/* Middle Right: Sidebar */}
+      <div className="lg:col-span-4 space-y-8">
+        <TopHiringWidget />
+      </div>
+
+      {/* Full Width Tool Promo 2 */}
+      <div className="col-span-full">
+        <VacationCalculatorPromo />
+      </div>
+
+      {/* Bottom Left: Remaining Categories */}
+      <div className="lg:col-span-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           <CategoryBlock title="Угостителство" slug="hospitality" color="#eab308" jobs={hospitalityJobs} />
           <CategoryBlock title="Логистика и Транспорт" slug="logistics" color="#f97316" jobs={logisticsJobs} />
           <CategoryBlock title="Човечки Ресурси" slug="hr" color="#f59e0b" jobs={hrJobs} />
@@ -124,15 +138,9 @@ export default async function Home(
           <CategoryBlock title="Останати" slug="other" color="#94a3b8" jobs={otherJobs} />
         </div>
       </div>
-
-      {/* Right Rail (Widgets) */}
-      <div className="lg:col-span-4 space-y-8 pt-2">
-        <div>
-          <SidebarNewsWidget />
-          <div className="h-px bg-border my-8" />
-          <TopHiringWidget />
-        </div>
-      </div>
+      
+      {/* Bottom Right: Empty space to keep grid alignment */}
+      <div className="lg:col-span-4"></div>
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { Job } from "@/components/jobs/JobCard";
 import JobCard from "@/components/jobs/JobCard";
 import { headers } from "next/headers";
+
+export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { ChevronLeft, Globe } from "lucide-react";
 

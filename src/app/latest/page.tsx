@@ -3,6 +3,8 @@ import FeedSection from "@/components/jobs/FeedSection";
 import SidebarNewsWidget from "@/components/layout/SidebarNewsWidget";
 import TopHiringWidget from "@/components/layout/TopHiringWidget";
 import { headers } from "next/headers";
+
+export const dynamic = "force-dynamic";
 import { Clock } from "lucide-react";
 
 export const metadata = {

@@ -5,6 +5,8 @@ import IndexWidget from "@/components/market-pulse/IndexWidget";
 import { SalaryCalculatorPromo, VacationCalculatorPromo } from "@/components/tools/ToolPromoWidgets";
 import { Job } from "@/components/jobs/JobCard";
 import { headers } from "next/headers";
+
+export const dynamic = "force-dynamic";
 import { Clock, TrendingUp, Globe, Star } from "lucide-react";
 
 async function fetchJobs(category?: string, remote?: boolean, section?: string, limit?: number, source?: string): Promise<Job[]> {

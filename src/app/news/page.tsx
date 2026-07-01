@@ -2,6 +2,8 @@ import NewsCard, { NewsArticle } from "@/components/news/NewsCard";
 import NewsSearchBar from "@/components/news/NewsSearchBar";
 import InfiniteNewsFeed from "@/components/news/InfiniteNewsFeed";
 import { headers } from "next/headers";
+
+export const dynamic = "force-dynamic";
 import { Clock, TrendingUp, Flame } from "lucide-react";
 import type { Metadata } from "next";
 

@@ -9,8 +9,14 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 
+const TOP_LINKS = [
+  { name: 'ОГЛАСИ', href: '/', color: 'bg-blue-500 hover:bg-blue-600' },
+  { name: 'ВЕСТИ', href: '/news', color: 'bg-amber-500 hover:bg-amber-600 text-black' },
+  { name: 'ИНДЕКС', href: '/market-pulse', color: 'bg-emerald-500 hover:bg-emerald-600' },
+  { name: 'АЛАТКИ', href: '/tools', color: 'bg-purple-500 hover:bg-purple-600' },
+];
+
 const CATEGORIES = [
-  { name: 'Почетна', icon: Home, href: '/' },
   { name: 'Најнови', icon: Clock, href: '/latest' },
   { name: 'IT', icon: Monitor, href: '/category/it' },
   { name: 'Дизајн', icon: Palette, href: '/category/design' },
@@ -28,12 +34,9 @@ const CATEGORIES = [
   { name: 'Здравство', icon: HeartPulse, href: '/category/healthcare' },
   { name: 'Хигиена', icon: Sparkles, href: '/category/cleaning' },
   { name: 'Останати', icon: MoreHorizontal, href: '/category/other' },
-  { name: 'Далечински работи', icon: Globe, href: '/remote' },
+  { name: 'Далечински работи', icon: Globe, href: '/category/remote' },
   { name: 'Пракса', icon: GraduationCap, href: '/internships' },
   { name: 'Компании', icon: Briefcase, href: '/companies' },
-  { name: 'Вести', icon: Newspaper, href: '/news' },
-  { name: 'Алатки', icon: Wrench, href: '/tools' },
-  { name: 'ИНДЕКС', icon: TrendingUp, href: '/market-pulse' },
 ];
 
 const ACTIONS = [
@@ -50,47 +53,59 @@ export default function MobileSidebar() {
         <Menu className="w-6 h-6" />
       </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[350px] p-0 border-r-border bg-background">
-        <div className="py-6 flex flex-col h-full px-4 overflow-y-auto">
-          <div className="mb-6 px-3">
+        <div className="py-6 flex flex-col h-full overflow-y-auto">
+          <div className="mb-6 px-4">
             <span className="font-bold text-xl tracking-tight text-foreground">JOBWALL</span>
           </div>
 
-          <nav className="space-y-1">
+          {/* Top Prominent Pills */}
+          <div className="px-4 grid grid-cols-2 gap-2 mb-6">
+            {TOP_LINKS.map((link) => (
+              <Link 
+                key={link.name}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className={`flex items-center justify-center py-2 px-3 rounded-full text-sm font-bold text-white transition-colors ${link.color}`}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Main Links */}
+          <nav className="flex flex-col">
             {CATEGORIES.map((cat) => (
               <Link 
                 key={cat.name} 
                 href={cat.href}
                 onClick={() => setOpen(false)}
-                className="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                className="flex items-center gap-4 px-4 py-3.5 text-sm font-medium text-foreground hover:bg-accent border-b border-border/40 transition-colors"
               >
-                <cat.icon className="w-5 h-5" />
+                <cat.icon className="w-5 h-5 text-muted-foreground" />
                 {cat.name}
               </Link>
             ))}
           </nav>
 
-          <div className="my-5 h-px bg-border mx-3" />
+          <div className="my-2" />
 
-          <nav className="space-y-1">
+          <nav className="flex flex-col">
             {ACTIONS.map((action) => (
               <Link 
                 key={action.name} 
                 href={action.href}
                 onClick={() => setOpen(false)}
-                className="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                className="flex items-center gap-4 px-4 py-3.5 text-sm font-medium text-foreground hover:bg-accent border-b border-border/40 transition-colors"
               >
-                <action.icon className="w-5 h-5" />
+                <action.icon className="w-5 h-5 text-muted-foreground" />
                 {action.name}
               </Link>
             ))}
+            <Link href="/about" onClick={() => setOpen(false)} className="flex items-center gap-4 px-4 py-3.5 text-sm font-medium text-foreground hover:bg-accent border-b border-border/40 transition-colors">
+              <Info className="w-5 h-5 text-muted-foreground" />
+              За Jobwall
+            </Link>
           </nav>
-
-          <div className="my-5 h-px bg-border mx-3" />
-
-          <Link href="/about" onClick={() => setOpen(false)} className="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors">
-            <Info className="w-5 h-5" />
-            За Jobwall
-          </Link>
         </div>
       </SheetContent>
     </Sheet>

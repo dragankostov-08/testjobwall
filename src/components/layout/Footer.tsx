@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-foreground font-medium">
-              <Link href="/remote" className="hover:text-primary transition-colors">Далечинска работа</Link>
+              <Link href="/category/remote" className="hover:text-primary transition-colors">Далечинска работа</Link>
               <span className="text-border">-</span>
               <Link href="/internships" className="hover:text-primary transition-colors">Пракса</Link>
               <span className="text-border">-</span>

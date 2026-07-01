@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Search, Menu, TrendingUp } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, FormEvent } from "react";
+import MobileSidebar from "./MobileSidebar";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -12,7 +13,8 @@ export default function Navbar() {
   const isCompanies = pathname.startsWith("/companies");
   const isTools = pathname.startsWith("/tools");
   const isMarketPulse = pathname.startsWith("/market-pulse");
-  const isJobs = !isNews && !isCompanies && !isTools && !isMarketPulse;
+  const isLatest = pathname === "/latest";
+  const isJobs = !isNews && !isCompanies && !isTools && !isMarketPulse && !isLatest;
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearch = (e: FormEvent) => {
@@ -30,17 +32,22 @@ export default function Navbar() {
 
   return (
     <header className="w-full flex flex-col font-sans border-b border-border shadow-sm bg-background print:hidden">
-      {/* Top Row: Logo, Search */}
-      <div className="max-w-[1200px] mx-auto w-full px-4 h-20 flex items-center justify-between">
-        {/* Left: Logo */}
-        <div className="flex-1 flex justify-start">
-          <Link href="/" className="text-4xl md:text-5xl font-bold tracking-tight text-foreground flex items-baseline hover:opacity-90 transition-opacity">
-            JOBWALL<span className="text-2xl ml-0.5">.mk</span>
+      {/* Top Row: Logo, Search, Menu */}
+      <div className="max-w-[1200px] mx-auto w-full px-4 h-16 md:h-20 flex items-center justify-between">
+        {/* Mobile Left: Menu */}
+        <div className="flex md:hidden flex-none w-10">
+          <MobileSidebar />
+        </div>
+
+        {/* Center/Left: Logo */}
+        <div className="flex-1 flex justify-center md:justify-start">
+          <Link href="/" className="text-3xl md:text-5xl font-bold tracking-tight text-foreground flex items-baseline hover:opacity-90 transition-opacity">
+            JOBWALL<span className="text-xl md:text-2xl ml-0.5">.mk</span>
           </Link>
         </div>
 
-        {/* Right: Search */}
-        <div className="flex-1 flex items-center justify-end gap-4">
+        {/* Right: Search and Desktop Menu */}
+        <div className="flex flex-none w-10 md:w-auto items-center justify-end gap-4">
           <form onSubmit={handleSearch} className="hidden md:flex relative w-48 lg:w-64">
             <input 
               type="text" 
@@ -53,14 +60,20 @@ export default function Navbar() {
               <Search className="w-4 h-4 text-muted-foreground hover:text-foreground transition-colors" />
             </button>
           </form>
-          <button className="p-1 text-muted-foreground hover:text-foreground transition-colors">
-            <Menu className="w-6 h-6" />
+          {/* Mobile Search Icon (Placeholder for now) */}
+          <button className="md:hidden p-1 text-muted-foreground hover:text-foreground transition-colors">
+            <Search className="w-6 h-6" />
           </button>
+          
+          {/* Desktop Menu */}
+          <div className="hidden md:block">
+            <MobileSidebar />
+          </div>
         </div>
       </div>
 
       {/* Middle Row: Primary Nav */}
-      <div className="bg-card border-t border-b border-border">
+      <div className="hidden md:block bg-card border-t border-b border-border">
         <div className="max-w-[1200px] mx-auto w-full px-4 flex flex-wrap items-center text-sm font-medium">
           <Link 
             href="/" 
@@ -111,8 +124,9 @@ export default function Navbar() {
       </div>
 
       {/* Bottom Row: Secondary Nav */}
-      <div className="bg-background border-b border-border">
-        <div className="max-w-[1200px] mx-auto w-full px-4 flex flex-wrap items-center text-[11px] font-semibold tracking-wider text-muted-foreground uppercase">
+      {!isLatest && (
+        <div className="hidden md:block bg-background border-b border-border">
+          <div className="max-w-[1200px] mx-auto w-full px-4 flex flex-wrap items-center text-[11px] font-semibold tracking-wider text-muted-foreground uppercase">
           {isNews ? (
             <>
               <Link href="/news" className="px-4 py-2.5 hover:text-foreground hover:bg-accent/50 transition-colors">Сите</Link>
@@ -162,6 +176,7 @@ export default function Navbar() {
           )}
         </div>
       </div>
+      )}
     </header>
   );
 }

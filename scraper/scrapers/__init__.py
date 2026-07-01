@@ -13,6 +13,7 @@ from scrapers.thrivity_mk import ThrivityMkScraper
 from scrapers.honorarec_mk import HonorarecMkScraper
 from scrapers.imashchoek_mk import ImashchoekMkScraper
 from scrapers.manpower_mk import ManpowerMkScraper
+from scrapers.mkjob_com import MkjobComScraper
 
 __all__ = [
     "KarieraMkScraper",
@@ -26,6 +27,7 @@ __all__ = [
     "HonorarecMkScraper",
     "ImashchoekMkScraper",
     "ManpowerMkScraper",
+    "MkjobComScraper",
 ]
 
 SCRAPER_CLASSES = [
@@ -40,4 +42,5 @@ SCRAPER_CLASSES = [
     HonorarecMkScraper,
     ImashchoekMkScraper,
     ManpowerMkScraper,
+    MkjobComScraper,
 ]

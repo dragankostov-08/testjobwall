@@ -137,6 +137,22 @@ class MkjobComScraper(BaseScraper):
                                 company_logo_url = src
                                 company_name = self._extract_company_from_logo(src)
 
+                        # Fetch detail page to get accurate company name
+                        import requests
+                        from bs4 import BeautifulSoup
+                        try:
+                            res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
+                            if res.status_code == 200:
+                                detail_soup = BeautifulSoup(res.text, 'html.parser')
+                                title_text = detail_soup.title.text if detail_soup.title else ""
+                                if " | MKJOB" in title_text:
+                                    # Example: Сметководител - Sigma-SB | MKJOB
+                                    parts = title_text.replace(" | MKJOB", "").split(" - ")
+                                    if len(parts) >= 2:
+                                        company_name = parts[-1].strip()
+                        except Exception as e:
+                            logger.warning(f"Error fetching detail page for {url}: {e}", source=self.source_name)
+
                         if title and url:
                             jobs.append(ScrapedJob(
                                 title=title,
@@ -145,7 +161,6 @@ class MkjobComScraper(BaseScraper):
                                 url=url,
                                 company_logo_url=company_logo_url
                             ))
-                            
                     except Exception as e:
                         logger.warning(f"Error parsing job card: {str(e)}", source=self.source_name)
                         

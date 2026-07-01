@@ -55,76 +55,79 @@ export default async function Home(
   ]);
 
   return (
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Main Content (Left Column) */}
-        <div className="lg:col-span-8">
-          {source && (
-            <div className="bg-indigo-500/10 border border-indigo-500/20 rounded-xl p-4 mb-6 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <Globe className="w-5 h-5 text-indigo-500" />
-                <p className="text-sm font-medium text-indigo-500">
-                  Прикажување огласи само од извор: <span className="font-bold">{source}</span>
-                </p>
+      <div className="space-y-8">
+        {/* Top Section: Feed + Sidebar */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="lg:col-span-8">
+            {source && (
+              <div className="bg-indigo-500/10 border border-indigo-500/20 rounded-xl p-4 mb-6 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <Globe className="w-5 h-5 text-indigo-500" />
+                  <p className="text-sm font-medium text-indigo-500">
+                    Прикажување огласи само од извор: <span className="font-bold">{source}</span>
+                  </p>
+                </div>
+                <a href="/" className="text-xs font-semibold bg-indigo-500 hover:bg-indigo-600 text-white px-3 py-1.5 rounded-lg transition-colors">
+                  Отстрани филтер
+                </a>
               </div>
-              <a href="/" className="text-xs font-semibold bg-indigo-500 hover:bg-indigo-600 text-white px-3 py-1.5 rounded-lg transition-colors">
-                Отстрани филтер
-              </a>
+            )}
+
+            <JobsSearchBar />
+
+            <FeedSection
+              title="Истакнати Огласи"
+              icon={Star}
+              color="#f59e0b"
+              jobs={featuredJobs}
+              maxJobs={5}
+              hideTitle={true}
+            />
+            
+            <div className="mb-4">
+              <IndexWidget />
             </div>
-          )}
-
-          <JobsSearchBar />
-
-          <FeedSection
-            title="Истакнати Огласи"
-            icon={Star}
-            color="#f59e0b"
-            jobs={featuredJobs}
-            maxJobs={5}
-            hideTitle={true}
-          />
-          
-          <div className="mb-8">
-            <IndexWidget />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-            <CategoryBlock title="Далечински Работи" slug="remote" color="#06b6d4" jobs={remoteJobs} />
-            <CategoryBlock title="IT & Software" slug="it" color="#3b82f6" jobs={itJobs} />
-            
-            <div className="md:col-span-2">
-              <SalaryCalculatorPromo />
+          {/* Right Rail (Widgets) */}
+          <div className="lg:col-span-4 space-y-8 pt-2">
+            <div>
+              <SidebarNewsWidget />
+              <div className="h-px bg-border my-8" />
+              <TopHiringWidget />
             </div>
-
-            <CategoryBlock title="Маркетинг" slug="marketing" color="#8b5cf6" jobs={marketingJobs} />
-            <CategoryBlock title="Продажба" slug="sales" color="#10b981" jobs={salesJobs} />
-            <CategoryBlock title="Финансии" slug="finance" color="#ef4444" jobs={financeJobs} />
-            <CategoryBlock title="Администрација" slug="admin" color="#14b8a6" jobs={adminJobs} />
-            
-            <div className="md:col-span-2">
-              <VacationCalculatorPromo />
-            </div>
-
-            <CategoryBlock title="Инженерство и Одржување" slug="engineering" color="#0ea5e9" jobs={engineeringJobs} />
-            <CategoryBlock title="Здравство" slug="healthcare" color="#14b8a6" jobs={healthcareJobs} />
-            <CategoryBlock title="Угостителство" slug="hospitality" color="#eab308" jobs={hospitalityJobs} />
-            <CategoryBlock title="Логистика и Транспорт" slug="logistics" color="#f97316" jobs={logisticsJobs} />
-            <CategoryBlock title="Човечки Ресурси" slug="hr" color="#f59e0b" jobs={hrJobs} />
-            <CategoryBlock title="Дизајн" slug="design" color="#ec4899" jobs={designJobs} />
-            <CategoryBlock title="Менаџмент" slug="management" color="#6366f1" jobs={managementJobs} />
-            <CategoryBlock title="Производство" slug="production" color="#a855f7" jobs={productionJobs} />
-            <CategoryBlock title="Право" slug="legal" color="#64748b" jobs={legalJobs} />
-            <CategoryBlock title="Хигиена" slug="cleaning" color="#38bdf8" jobs={cleaningJobs} />
-            <CategoryBlock title="Останати" slug="other" color="#94a3b8" jobs={otherJobs} />
           </div>
         </div>
 
-        {/* Right Rail (Widgets) */}
-        <div className="lg:col-span-4 space-y-8 pt-2">
-          <div>
-            <SidebarNewsWidget />
-            <div className="h-px bg-border my-8" />
-            <TopHiringWidget />
+        {/* Categories Section - FULL WIDTH */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+          <CategoryBlock title="Далечински Работи" slug="remote" color="#06b6d4" jobs={remoteJobs} />
+          <CategoryBlock title="IT & Software" slug="it" color="#3b82f6" jobs={itJobs} />
+          
+          <div className="md:col-span-2">
+            <SalaryCalculatorPromo />
           </div>
+
+          <CategoryBlock title="Маркетинг" slug="marketing" color="#8b5cf6" jobs={marketingJobs} />
+          <CategoryBlock title="Продажба" slug="sales" color="#10b981" jobs={salesJobs} />
+          <CategoryBlock title="Финансии" slug="finance" color="#ef4444" jobs={financeJobs} />
+          <CategoryBlock title="Администрација" slug="admin" color="#14b8a6" jobs={adminJobs} />
+          
+          <div className="md:col-span-2">
+            <VacationCalculatorPromo />
+          </div>
+
+          <CategoryBlock title="Инженерство и Одржување" slug="engineering" color="#0ea5e9" jobs={engineeringJobs} />
+          <CategoryBlock title="Здравство" slug="healthcare" color="#14b8a6" jobs={healthcareJobs} />
+          <CategoryBlock title="Угостителство" slug="hospitality" color="#eab308" jobs={hospitalityJobs} />
+          <CategoryBlock title="Логистика и Транспорт" slug="logistics" color="#f97316" jobs={logisticsJobs} />
+          <CategoryBlock title="Човечки Ресурси" slug="hr" color="#f59e0b" jobs={hrJobs} />
+          <CategoryBlock title="Дизајн" slug="design" color="#ec4899" jobs={designJobs} />
+          <CategoryBlock title="Менаџмент" slug="management" color="#6366f1" jobs={managementJobs} />
+          <CategoryBlock title="Производство" slug="production" color="#a855f7" jobs={productionJobs} />
+          <CategoryBlock title="Право" slug="legal" color="#64748b" jobs={legalJobs} />
+          <CategoryBlock title="Хигиена" slug="cleaning" color="#38bdf8" jobs={cleaningJobs} />
+          <CategoryBlock title="Останати" slug="other" color="#94a3b8" jobs={otherJobs} />
         </div>
       </div>
   );

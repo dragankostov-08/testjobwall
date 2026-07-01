@@ -2,9 +2,7 @@ import { Job } from "@/components/jobs/JobCard";
 import FeedSection from "@/components/jobs/FeedSection";
 import SidebarNewsWidget from "@/components/layout/SidebarNewsWidget";
 import TopHiringWidget from "@/components/layout/TopHiringWidget";
-import { headers } from "next/headers";
 
-export const dynamic = "force-dynamic";
 import { Clock } from "lucide-react";
 
 export const metadata = {
@@ -14,7 +12,7 @@ export const metadata = {
 
 async function fetchLatestJobs(): Promise<Job[]> {
   try {
-    const host = (await headers()).get("host");
+    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
     const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
     
     // Fetch a larger list for the dedicated page (e.g., 20 jobs)

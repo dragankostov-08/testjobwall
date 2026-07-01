@@ -1,9 +1,7 @@
 import NewsCard, { NewsArticle } from "@/components/news/NewsCard";
 import NewsSearchBar from "@/components/news/NewsSearchBar";
 import InfiniteNewsFeed from "@/components/news/InfiniteNewsFeed";
-import { headers } from "next/headers";
 
-export const dynamic = "force-dynamic";
 import { Clock, TrendingUp, Flame } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -14,7 +12,7 @@ export const metadata: Metadata = {
 
 async function fetchNews(section?: string, limit: number = 15): Promise<NewsArticle[]> {
   try {
-    const host = (await headers()).get("host");
+    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
     const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
 
     const params = new URLSearchParams();

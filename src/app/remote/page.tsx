@@ -1,14 +1,12 @@
 import { Job } from "@/components/jobs/JobCard";
 import JobCard from "@/components/jobs/JobCard";
-import { headers } from "next/headers";
 
-export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { ChevronLeft, Globe } from "lucide-react";
 
 async function fetchRemoteJobs(): Promise<Job[]> {
   try {
-    const host = (await headers()).get("host");
+    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
     const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
     
     const params = new URLSearchParams();

@@ -4,14 +4,12 @@ import JobsSearchBar from "@/components/jobs/JobsSearchBar";
 import IndexWidget from "@/components/market-pulse/IndexWidget";
 import { SalaryCalculatorPromo, VacationCalculatorPromo } from "@/components/tools/ToolPromoWidgets";
 import { Job } from "@/components/jobs/JobCard";
-import { headers } from "next/headers";
 
-export const dynamic = "force-dynamic";
 import { Clock, TrendingUp, Globe, Star } from "lucide-react";
 
 async function fetchJobs(category?: string, remote?: boolean, section?: string, limit?: number, source?: string): Promise<Job[]> {
   try {
-    const host = (await headers()).get("host");
+    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
     const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
     
     const params = new URLSearchParams();

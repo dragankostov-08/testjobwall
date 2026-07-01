@@ -188,7 +188,8 @@ def main():
             logger.error("FastAPI required for server mode")
             sys.exit(1)
 
-        port = settings.health_check_port
+        # Railway provides the PORT environment variable
+        port = int(os.environ.get("PORT", settings.health_check_port))
         logger.info(f"Starting API server on http://0.0.0.0:{port}")
         uvicorn.run(app, host="0.0.0.0", port=port)
     else:

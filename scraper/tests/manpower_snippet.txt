@@ -1,0 +1,1057 @@
+<div class="row row-equal">
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="talent-db-cta card mb-5 w-100 bg-primary text-white position-relative overflow-hidden py-14 px-11">
+   <img alt="" aria-hidden="true" class="talent-db-cta__pattern" src="/modules/custom/job_posts/images/talent-db-cta-pattern.svg"/>
+   <div class="talent-db-cta__content d-flex flex-column flex-grow-1">
+    <h3 class="fs-11 fw-700 mb-11">
+     Бидете во тек со најновите работни можности
+    </h3>
+    <p class="fs-15 lh-28 mb-5">
+     Придружете се на нашата база на податоци и добивајте персонализирани можности за работа прилагодени на вашето искуство.
+    </p>
+    <a class="mt-auto w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3 stretched-link" href="/mk/baza-na-talenti">
+     Приклучи се
+    </a>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     25/06/2026
+    </span>
+    <a href="/mk/job-posts/306407" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Комерцијалист за источна Македонија
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Малопродажба
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    Хибридна Работа
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Во име на нашиот клиент бараме Комерцијалист.Доколку сте комуникативни, ориентирани кон резултати и сакате динамична работа - ова е вистинската можност за вас.
+    <strong>
+     Работна позиција:
+    </strong>
+    Комерцијалист за источна Македонија
+    <strong>
+     Локација на работа:
+    </strong>
+    Источна Македонија
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Штип
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/306407">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=306407&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     25/06/2026
+    </span>
+    <a href="/mk/job-posts/306417" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Повеќе позиции отворени во грижа за корисници
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Поддршка за корисници
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Постојано сме во потрага по комуникативни, одговорни и мотивирани кандидати за различни позиции во областа на грижа за корисници. Доколку сакаш да работиш со луѓе, да помагаш во решавање на предизвици и да придонесуваш кон позитивно корисничко искуство - те охрабруваме да аплицираш и да станеш дел од нашата база на кандидати за тековни и идни можности за вработување.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/306417">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=306417&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     23/06/2026
+    </span>
+    <a href="/mk/job-posts/306230" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      ПОВЕЌЕ ОТВОРЕНИ ПОЗИЦИИ ВО МАРКЕТИНГ
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Маркетинг/Рекламирање/Медиуми/ПР/Дизајн
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Постојано сме во потрага по креативни, организирани и амбициозни кандидати за различни позиции во областа на маркетингот и комуникациите. Доколку имаш интерес за градење брендови, креирање маркетинг кампањи, дигитални комуникации и развој на маркетинг стратегии - те охрабруваме да аплицираш и да станеш дел од нашата база на кандидати за тековни и идни можности за вработување.🔹 Позиции за кои често регрутираме:
+    <ul>
+     <li>
+      Marketing Specialist
+     </li>
+     <li>
+      Digital Marketing Specialist
+     </li>
+     <li>
+      Marketing Coordinator
+     </li>
+     <li>
+      Marketing Executive
+     </li>
+     <li>
+      Brand Manager
+     </li>
+     <li>
+      Brand Coordinator
+     </li>
+     <li>
+      Campaign Coordinator
+     </li>
+     <li>
+      Marketing Communications Specialist
+     </li>
+     <li>
+      PR &amp; Communications Specialist
+     </li>
+     <li>
+      Internal Communications Specialist
+     </li>
+     <li>
+      Social Media Specialist
+     </li>
+     <li>
+      Content Marketing Specialist
+     </li>
+     <li>
+      Performance Marketing Specialist
+     </li>
+     <li>
+      SEO Specialist
+     </li>
+     <li>
+      CRM Specialist
+     </li>
+     <li>
+      Event Marketing Coordinator
+     </li>
+     <li>
+      Marketing Manager
+     </li>
+     <li>
+      Communications Manager
+     </li>
+     <li>
+      Brand Manager
+     </li>
+     <li>
+      Head of Marketing
+     </li>
+     <li>
+      Marketing Communications Manager
+     </li>
+     <li>
+      Director of Marketing
+     </li>
+     <li>
+      И други позиции во областа на маркетинг, комуникации, брендинг и дигитален маркетинг.
+     </li>
+    </ul>
+    Позиции во телекомуникациска индустрија:
+    <ul>
+     <li>
+      Digital Marketing Specialist
+     </li>
+     <li>
+      Brand &amp; Campaign Coordinator
+     </li>
+     <li>
+      PR &amp; Internal Communications Specialist
+     </li>
+     <li>
+      Marketing Communications Specialist
+     </li>
+     <li>
+      CRM &amp; Loyalty Specialist
+     </li>
+     <li>
+      Social Media Specialist
+     </li>
+     <li>
+      Product Marketing Specialist
+     </li>
+     <li>
+      Marketing Manager
+     </li>
+     <li>
+      Marketing Communications Manager
+     </li>
+     <li>
+      Head of Marketing
+     </li>
+     <li>
+      И други позиции во областа на маркетинг, комуникации, бренд менаџмент и корисничка лојалност во телекомуникациската индустрија.
+     </li>
+    </ul>
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/306230">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=306230&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     23/06/2026
+    </span>
+    <a href="/mk/job-posts/306227" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      ПОВЕЌЕ ОТВОРЕНИ ПОЗИЦИИ ВО ПРОДАЖБА
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Продажба и бизнис развој
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот. Постојано сме во потрага по мотивирани и амбициозни кандидати за различни позиции во областа на продажба. Доколку имаш интерес за работа со клиенти, преговарање, развивање деловни односи и остварување резултати - те охрабруваме да аплицираш и да станеш дел од нашата база на кандидати за тековни и идни можности за вработување.🔹 Позиции за кои често регрутираме:
+    <ul>
+     <li>
+      Специјалист за продажба / Советник за продажба
+     </li>
+     <li>
+      Агент за директна продажба
+     </li>
+     <li>
+      B2B Sales Executive / Account Manager
+     </li>
+     <li>
+      Комерцијалист
+     </li>
+     <li>
+      Sales Representative
+     </li>
+     <li>
+      Business Development Executive
+     </li>
+     <li>
+      Key Account Manager
+     </li>
+     <li>
+      Регионален претставник за продажба
+     </li>
+     <li>
+      Менаџер на салон (Store/Shop Manager)
+     </li>
+     <li>
+      Store Manager
+     </li>
+     <li>
+      Area Sales Supervisor
+     </li>
+     <li>
+      Area Sales Manager
+     </li>
+     <li>
+      Branch Manager
+     </li>
+     <li>
+      Regional Sales Manager
+     </li>
+     <li>
+      Sales Manager
+     </li>
+     <li>
+      Head of Sales
+     </li>
+     <li>
+      И други позиции во областа на продажба, развој на бизнис и управување со продажни тимови.Позиции во телекомуникациска индустрија:
+     </li>
+     <li>
+      Retail Sales Specialist
+     </li>
+     <li>
+      B2B Sales Agent / B2B Account Manager
+     </li>
+     <li>
+      Direct Sales Agent
+     </li>
+     <li>
+      Retention &amp; Loyalty Specialist
+     </li>
+     <li>
+      Telemarketing Agent
+     </li>
+     <li>
+      Team Lead - Sales
+     </li>
+     <li>
+      И други позиции во областа на продажба, грижа за корисници и комерцијални активности во телекомуникациската индустрија.
+     </li>
+    </ul>
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/306227">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=306227&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     23/06/2026
+    </span>
+    <a href="/mk/job-posts/306204" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Вработување во Хрватска – ПОВЕЌЕ ОТВОРЕНИ ПОЗИЦИИ ВО ГРАДЕЖНИШТВО
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Техничка работа
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот. Компанијата
+    <strong>
+     Loading
+    </strong>
+    во Хрватска поради зголемен обем на работа отвора повеќе работни позиции во градежништво. 🔹 РАБОТНА ПОЗИЦИЈА:
+    <ul>
+     <li>
+      Малтерџии
+     </li>
+     <li>
+      Ѕидари
+     </li>
+     <li>
+      Градежни тесари
+     </li>
+    </ul>
+    📍 Локација на работа:
+    <ul>
+     <li>
+      Загреб, Хрватска
+     </li>
+    </ul>
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопски регион
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/306204">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=306204&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305908" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Регионален менаџер - Малопродажба
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Малопродажба
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    Хибридна Работа
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Во име на наш реномиран клиент, Sara Fashion, бараме искусни и квалификувани кандидати за позицијата Регионален менаџер - Малопродажба.Доколку имаш искуство во малопродажба, лидерски вештини и желба да управуваш со повеќе продажни локации - оваа можност е за тебе!
+    <strong>
+     РАБОТНА ПОЗИЦИЈА:
+    </strong>
+    Регионален менаџер - Малопродажба
+    <strong>
+     Локација на работа:
+    </strong>
+    Скопје, Македонија (теренска + канцелариска работа)
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305908">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305908&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305905" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Комерцијалист за западна Македонија – Бои и Лакови
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Малопродажба
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    Хибридна Работа
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Во име на нашиот клиент, компанија која се фокусира на обезбедување висококвалитетни бои и лакови за професионални клиенти, нудејќи целосни решенија за бизниси, и корисници низ Македонија, бараме Комерцијалист.Доколку сте комуникативни, ориентирани кон резултати и сакате динамична работа - ова е вистинската можност за вас.
+    <strong>
+     Работна позиција:
+    </strong>
+    Комерцијалист за западна Македонија – Бои и Лакови
+    <strong>
+     Локација на работа:
+    </strong>
+    Западна Македонија
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Гостивар
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305905">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305905&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305902" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      IT System Admin
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Информатичка Технологија
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    Флексибилен
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Во име на нашиот реномиран клиент, One Macedonia Telecommunications, новооснована компанија во телекомуникацискиот сектор, поддржана од регионалната инвестициска група 4iG, бараме искусен и одговорен IT System Administrator кој ќе ја поддржува и одржува IT инфраструктурата, ќе обезбедува стабилна работа на системите и ќе учествува во имплементација и поддршка на технички решенија и инфраструктурни проекти.
+    <strong>
+     РАБОТНА ПОЗИЦИЈА:
+    </strong>
+    <ul>
+     <li>
+      IT System Admin
+     </li>
+    </ul>
+    <strong>
+     Локација на работа:
+    </strong>
+    <ul>
+     <li>
+      Скопје, Македонија
+     </li>
+    </ul>
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопски регион
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305902">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305902&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305898" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Information and Cyber Security Expert
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Информатичка Технологија
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Во име на нашиот реномиран клиент, One Macedonia Telecommunications, новооснована компанија во телекомуникацискиот сектор, поддржана од регионалната инвестициска група 4iG, бараме искусен Information and Cyber Security Expert за дизајн, имплементација и одржување на безбедносната инфраструктура, со фокус на заштита на системите, мрежите и податоците, обезбедување на високо ниво на сајбер безбедност, како и учество во инфраструктурни и безбедносни проекти и технички подобрувања.
+    <strong>
+     РАБОТНА ПОЗИЦИЈА:
+    </strong>
+    Information and Cyber Security Expert
+    <strong>
+     Локација на работа:
+    </strong>
+    Скопје, Македонија
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопски регион
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305898">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305898&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305896" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Core Network Specialist
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Информатичка Технологија
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    Хибридна Работа
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Core Network SpecialistManpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.Во име на нашиот реномиран клиент, One Macedonia Telecommunications, новооснована компанија во телекомуникацискиот сектор, поддржана од регионалната инвестициска група 4iG, бараме искусен Core Network Specialist за дизајн, имплементација и одржување на core мрежната инфраструктура, со фокус на стабилност, перформанси и безбедност на системите, како и учество во инфраструктурни проекти и технички подобрувања.
+    <strong>
+     РАБОТНА ПОЗИЦИЈА:
+    </strong>
+    Core Network Specialist
+    <strong>
+     Локација на работа:
+    </strong>
+    Скопје, Македонија
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопски регион
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305896">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305896&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305886" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Head of Marketing Communication Department
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Маркетинг/Рекламирање/Медиуми/ПР/Дизајн
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower, a global leader in workforce solutions, connects talented professionals with leading companies. Our mission is simple - to support your career ambitions while meeting the evolving needs of the job market.On behalf of our esteemed client, One Macedonia Telecommunications, a newly established telecommunications company backed by the regional investment group 4iG, we are seeking an experienced, strategic, and results-driven Head of Marketing Communication Department.The ideal candidate will possess extensive experience in marketing communications, brand management, and integrated marketing campaigns, with a proven ability to develop and execute communication strategies that strengthen brand positioning, enhance stakeholder engagement, and support business growth. Experience within the telecommunications industry will be considered an advantage, but is not mandatory.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305886">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305886&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305883" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Accounting, Tax and Treasury Specialist
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Финансии и сметководство
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower, a global leader in workforce solutions, connects talented professionals with leading companies. Our mission is simple - to support your career ambitions while meeting the evolving needs of the job market.On behalf of our esteemed client, One Macedonia Telecommunications, a newly established telecommunications company backed by the regional investment group 4iG, we are seeking a detail-oriented, analytical, and highly motivated Accounting &amp; Tax and Treasury Specialist.The ideal candidate will possess strong expertise in accounting controls, tax compliance, and treasury management, with the ability to ensure financial accuracy, regulatory compliance, and effective liquidity management. Experience within the telecommunications industry will be considered an advantage, but is not mandatory.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305883">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305883&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     17/06/2026
+    </span>
+    <a href="/mk/job-posts/305878" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Head of Customer Service Department
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Поддршка за корисници
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower, a global leader in workforce solutions, connects talented professionals with leading companies. Our mission is simple - to support your career ambitions while meeting the evolving needs of the job market. On behalf of our esteemed client, One Macedonia Telecommunications, a newly established telecommunications company backed by the regional investment group 4iG, we are seeking an experienced, strategic, and results-driven Head of Customer Service Department.The ideal candidate will possess extensive experience in customer service leadership, customer experience management, and service operations. Experience within the telecommunications industry will be considered an advantage, but is not mandatory.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305878">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305878&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     09/06/2026
+    </span>
+    <a href="/mk/job-posts/305290" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Вработување во KFC
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Угостителство
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.
+Во име на нашиот реномиран клиент KFC, бараме мотивирани и одговорни кандидати за повеќе отворени позиции: Back of House / Middle of House / Front of House.
+Ако имаш интерес за работа во динамична средина, работа со храна и сакаш да бидеш дел од тим кој работи со високи стандарди на квалитет и услуга – оваа можност е за тебе!
+🔹 РАБОТНА ПОЗИЦИЈА:
+    <ul>
+     <li>
+      Back of House, Middle of House, Front of House
+     </li>
+    </ul>
+    📍 Локација на работа:
+    <ul>
+     <li>
+      Скопје и Струга
+     </li>
+    </ul>
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопски регион, Струга
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305290">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305290&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     08/06/2026
+    </span>
+    <a href="/mk/job-posts/305215" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Chief Accountant
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Финансии и сметководство
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower, a global leader in workforce solutions, connects talented professionals with leading companies. Our mission is simple - to support your career ambitions while meeting the evolving needs of the job market.On behalf of our client, an international company, we are currently looking for an experienced and responsible Chief Accountant.If you are a finance professional with strong expertise in accounting, financial reporting, tax regulations, and team management, and you are motivated to work in a dynamic international environment, we would be happy to receive your application.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305215">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305215&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     04/06/2026
+    </span>
+    <a href="/mk/job-posts/305062" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Јуниор сметководител
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Финансии и сметководство
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот. 
+Во име на нашиот клиент БДО, една од глобалните водечки компании во областа на ревизија, сметководство и консалтинг, поради зголемен обем на работа, бараме искусни и мотивирани кандидати за позицијата Јуниор сметководител.
+Доколку имате интерес за развој во областа на сметководството, сакате да стекнете практично искуство во финансиски и даночни процеси и да работите во динамична и интернационална средина - ова е одлична можност за вас.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/305062">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=305062&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     26/05/2026
+    </span>
+    <a href="/mk/job-posts/304404" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Сениор сметководител
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Финансии и сметководство
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот. 
+Во име на нашиот клиент БДО, една од глобалните водечки компании во областа на ревизија, сметководство и консалтинг, поради зголемен обем на работа, бараме искусни и мотивирани кандидати за позицијата Сениор Сметководител.
+Доколку имате искуство во сметководство, одлично познавање на финансиски и даночни процеси, како и желба за професионален развој во интернационална и динамична средина - ова е вистинската можност за вас.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопје
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/304404">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=304404&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     18/05/2026
+    </span>
+    <a href="/mk/job-posts/303881" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Business Development Specialist – Office Solutions
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Продажба и бизнис развој
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+    На лице место
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower – As a global leader in employment services, we connect talented professionals with leading companies across various industries.
+Our goal? To support career growth while helping companies find the right talent.
+On behalf of our client – a well-established company specialized in innovative office solutions, interior design and premium office furniture – we are looking for motivated and experienced candidates for the position of Business Development Specialist – Office Solutions.
+If you have experience in B2B sales, enjoy building long-term client relationships and want to be part of innovative workplace projects in a dynamic environment – this could be the perfect opportunity for you!
+Location: Skopje, North Macedonia
+Employment Type: Full-time
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Скопски регион
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/303881">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=303881&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="card p-lg-8 p-5 justify-content-between mb-5">
+   <div class="card-top">
+    <span class="bg-danger-01 px-3 py-1 rounded-5 text-danger fw-600 fs-19">
+     14/05/2026
+    </span>
+    <a href="/mk/job-posts/303723" style="color:initial">
+     <h3 class="fs-13 fw-700 mt-5">
+      Приклучи се во нашата база на кандидати
+     </h3>
+    </a>
+   </div>
+   <div class="category-slider-wrapper">
+    <div class="category-slider">
+     <span class="category-item bg-primary-01 px-3 py-1 rounded-5 text-primary fw-600 fs-22">
+      Други области
+     </span>
+    </div>
+   </div>
+   <div class="job-type d-flex align-items-center position-relative text-primary fs-19 gap-2 mb-3">
+   </div>
+   <div class="text-grey-03 fs-19 lh-25 truncate-multiline">
+    Manpower - Како глобален лидер во вработувањето, ги поврзуваме талентите со врвни компании. Нашата цел? Да ги исполниме твоите амбиции и потребите на пазарот на трудот.
+
+Доколку сте отворени за нови кариерни можности, но сè уште не сте ја пронашле вистинската позиција за Вас, би сакале да стапиме во контакт.
+Како агенција за вработување која соработува со различни компании од повеќе индустрии, постојано бараме талентирани професионалци за тековни и идни позиции. Со приклучување во нашата база на кандидати, ќе бидете меѓу првите што ќе бидат разгледани кога ќе се појави соодветна можност.
+   </div>
+   <div class="job-content">
+    <div class="job-city d-flex align-items-center position-relative text-primary fs-19 gap-4 mb-4">
+     Друго
+    </div>
+    <div class="d-flex align-items-center gap-5">
+     <a class="btn btn-primary py-3 px-4 w-100 rounded-3" href="/mk/job-posts/303723">
+      Аплицирај
+     </a>
+     <a class="w-100 text-center btn btn-danger py-3 px-4 w-100 rounded-3" href="/mk/job-posts-preview?job_id=303723&amp;dp=1">
+      Повеќе информации
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

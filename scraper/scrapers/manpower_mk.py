@@ -30,22 +30,21 @@ class ManpowerMkScraper(BaseScraper):
                 return jobs
 
             soup = BeautifulSoup(response.content, 'html.parser')
-            job_elements = soup.select('.position, .job')
+            job_elements = soup.select('.card.p-lg-8')
 
             logger.info(f"Found {len(job_elements)} job elements", source=self.source_name)
 
             for element in job_elements:
                 try:
-                    title = element.select_one('h3, .title')
-                    company = element.select_one('.company')
-                    location = element.select_one('.location')
-                    link = element.select_one('a')
+                    title = element.select_one('.card-top h3')
+                    location = element.select_one('.job-city')
+                    link = element.select_one('.card-top a')
 
                     if not all([title, link]):
                         continue
 
                     title_text = title.get_text(strip=True)
-                    company_text = company.get_text(strip=True) if company else "Manpower"
+                    company_text = "Manpower"
                     location_text = location.get_text(strip=True) if location else "Unknown"
                     url = link.get('href', '')
 

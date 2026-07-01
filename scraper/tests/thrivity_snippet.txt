@@ -1,0 +1,10 @@
+<div>
+ <div class="dp-flex">
+  <a au-target-id="271" class="btn btn-danger mr-2 au-target" href="thrivity-cv?jobPost=1269f916-95f2-4398-97b4-6cd5fc1bb8e4" href.bind="getApplyUrl(item.applyType, item.id)" target="_self">
+   Аплицирај тука
+  </a>
+  <a au-target-id="273" class="btn btn-primary btn-padding au-target" click.delegate="viewJobDetails(item.id)" href="#">
+   Види
+  </a>
+ </div>
+</div>

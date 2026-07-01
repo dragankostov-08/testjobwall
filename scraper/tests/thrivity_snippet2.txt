@@ -1,0 +1,87 @@
+<div class="card job-post-card">
+ <div class="dp-flex jc-between ai-center">
+  <div class="dp-flex ai-center">
+   <a au-target-id="266" class="margin-r-15 au-target" href="/view-company-profile?id=b626bddd-ca1e-474a-aa30-677d4957c006" route-href="route: viewCompanyProfile; params.bind: {id: item.companyProfileId}">
+    <div au-target-id="267" class="jobpost-company-img au-target" style='background-image: url("https://storage.thrivity.mk/storage/users/0931a26d-3c64-4619-bea6-22a0d5b8bb37.jpg");'>
+    </div>
+    <!--anchor-->
+   </a>
+   <a au-target-id="269" class="color-black au-target" href="/view-company-profile?id=b626bddd-ca1e-474a-aa30-677d4957c006" route-href="route: viewCompanyProfile; params.bind: {id: item.companyProfileId}">
+    <h6>
+     NOVA International School Skopje
+    </h6>
+   </a>
+  </div>
+  <div>
+   <div class="dp-flex">
+    <a au-target-id="271" class="btn btn-danger mr-2 au-target" href="thrivity-cv?jobPost=1269f916-95f2-4398-97b4-6cd5fc1bb8e4" href.bind="getApplyUrl(item.applyType, item.id)" target="_self">
+     Аплицирај тука
+    </a>
+    <a au-target-id="273" class="btn btn-primary btn-padding au-target" click.delegate="viewJobDetails(item.id)" href="#">
+     Види
+    </a>
+   </div>
+  </div>
+ </div>
+ <hr/>
+ <div class="title margin-b-5">
+  <a au-target-id="275" class="link au-target" click.delegate="viewJobDetails(item.id)" href="#">
+   School Nurse
+  </a>
+ </div>
+ <div class="card-info dp-flex jc-between">
+  <div class="dp-flex">
+   <div>
+    <icon class="fa fa-map-marker fa-3">
+    </icon>
+    <span>
+     Северна Македонија
+    </span>
+    <span>
+     , Скопје
+    </span>
+    <!--anchor-->
+   </div>
+   <!--anchor-->
+  </div>
+  <div class="dp-flex ai-center">
+   <span class="label margin-r-10">
+    Огласот е отворен до:
+   </span>
+   <span>
+    <icon class="fa fa-calendar fa-3">
+    </icon>
+    <span>
+     26.07.2026
+    </span>
+   </span>
+  </div>
+ </div>
+ <div class="dynamic-content">
+  <div>
+   <div class="margin-b-5">
+    <b>
+     Што може да очекувате:
+    </b>
+   </div>
+   <div au-target-id="285" class="au-target" innerhtml.bind="item.benefits">
+    <ul>
+     <li>
+      Position: full-time, on-site School Nurse (PK3-12)
+     </li>
+     <li>
+      Reports to: Student Support Services Coordinator
+     </li>
+     <li>
+      Start date: August 2026; contract length one-year
+     </li>
+     <li>
+      Compensatio...
+     </li>
+    </ul>
+   </div>
+  </div>
+  <!--anchor-->
+  <!--anchor-->
+ </div>
+</div>

@@ -35,61 +35,70 @@ class ThrivityMkScraper(BaseScraper):
                 # Wait for jobs to load
                 page.wait_for_timeout(10000)
                 
-                # Attempt to find job links
-                links = page.query_selector_all('a')
-                job_links = [l for l in links if l.get_attribute('href') and '/job-post/' in l.get_attribute('href')]
+                # We can just get the HTML and parse with BeautifulSoup to avoid complex Playwright extraction
+                content = page.content()
+                browser.close()
                 
-                logger.info(f"Found {len(job_links)} job links", source=self.source_name)
+                from bs4 import BeautifulSoup
+                soup = BeautifulSoup(content, 'html.parser')
                 
-                for link in job_links:
+                job_cards = soup.select('.job-post-card')
+                logger.info(f"Found {len(job_cards)} job cards", source=self.source_name)
+                
+                for card in job_cards:
                     try:
-                        title_text = link.inner_text().strip()
-                        if not title_text:
-                            # Try finding an inner heading
-                            h_el = link.query_selector('h1, h2, h3, h4, h5, h6, .title')
-                            if h_el:
-                                title_text = h_el.inner_text().strip()
-                        
-                        url = link.get_attribute('href')
-                        if url and not url.startswith('http'):
-                            url = "https://app.thrivity.mk" + url
+                        title_el = card.select_one('.title a')
+                        if not title_el:
+                            continue
                             
-                        # Navigate to parent to find company and location
-                        parent = link.evaluate_handle('el => el.parentElement.parentElement')
+                        title_text = title_el.get_text(strip=True)
                         
                         company_text = "Unknown Company"
-                        location_text = "Unknown"
-                        company_logo_url = None
-                        
-                        if parent:
-                            # Try to find an image in the parent structure
-                            img = parent.query_selector('img')
-                            if img:
-                                company_logo_url = img.get_attribute('src')
+                        company_el = card.select_one('h6')
+                        if company_el:
+                            company_text = company_el.get_text(strip=True)
                             
-                            all_text = parent.inner_text()
-                            if all_text:
-                                lines = [line.strip() for line in all_text.split('\n') if line.strip()]
-                                # The first few lines usually contain company and location in these cards
-                                if len(lines) > 1 and lines[0] != title_text:
-                                    company_text = lines[0]
-                                elif len(lines) > 2:
-                                    company_text = lines[1]
-
-                        if title_text and url:
-                            jobs.append(ScrapedJob(
-                                title=title_text,
-                                company=company_text,
-                                location=location_text,
-                                url=url,
-                                company_logo_url=company_logo_url,
-                                is_remote="remote" in title_text.lower() or "remote" in location_text.lower()
-                            ))
+                        # Extract job id from apply link
+                        apply_link = card.select_one('a[href*="jobPost="]')
+                        url = None
+                        if apply_link:
+                            href = apply_link.get('href', '')
+                            if 'jobPost=' in href:
+                                job_id = href.split('jobPost=')[1].split('&')[0]
+                                url = f"https://app.thrivity.mk/job-post/{job_id}"
+                                
+                        if not url:
+                            continue
+                            
+                        # Extract location
+                        location_text = "Unknown"
+                        marker = card.select_one('.fa-map-marker')
+                        if marker and marker.parent:
+                            spans = marker.parent.select('span')
+                            if spans:
+                                location_text = ", ".join([s.get_text(strip=True) for s in spans if s.get_text(strip=True)])
+                                
+                        # Extract image
+                        company_logo_url = None
+                        img_div = card.select_one('.jobpost-company-img')
+                        if img_div and 'background-image: url(' in str(img_div):
+                            bg_style = img_div.get('style', '')
+                            if 'url("' in bg_style:
+                                company_logo_url = bg_style.split('url("')[1].split('")')[0]
+                            elif 'url(' in bg_style:
+                                company_logo_url = bg_style.split('url(')[1].split(')')[0]
+                                
+                        jobs.append(ScrapedJob(
+                            title=title_text,
+                            company=company_text,
+                            location=location_text.strip(', '),
+                            url=url,
+                            company_logo_url=company_logo_url,
+                            is_remote="remote" in title_text.lower() or "remote" in location_text.lower()
+                        ))
                     except Exception as e:
                         logger.warning(f"Failed to parse job element: {str(e)}", source=self.source_name)
                         continue
-                
-                browser.close()
 
         except Exception as e:
             logger.error(f"Scraping failed: {str(e)}", source=self.source_name)

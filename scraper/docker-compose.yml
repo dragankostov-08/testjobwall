@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  # PostgreSQL Database (Local Development)
+  # For Supabase deployment, comment out this service and set DATABASE_URL to your Supabase URL
+  postgres:
+    image: postgres:16-alpine
+    container_name: jbowall_postgres
+    environment:
+      POSTGRES_USER: jbowall_user
+      POSTGRES_PASSWORD: jbowall_password
+      POSTGRES_DB: jbowall
+      POSTGRES_INITDB_ARGS: '-c max_connections=100'
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jbowall_user -d jbowall"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - jbowall_network
+
+  # Scraper Service
+  scraper:
+    build: .
+    container_name: jbowall_scraper
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Local PostgreSQL
+      DATABASE_URL: postgresql://jbowall_user:jbowall_password@postgres:5432/jbowall
+      
+      # For Supabase, replace DATABASE_URL with:
+      # DATABASE_URL: postgresql://postgres.[PROJECT_ID]:[PASSWORD]@aws-0-[REGION].pooler.supabase.com:5432/postgres
+      
+      LOG_LEVEL: INFO
+      LOG_FILE: logs/scraper.log
+      SCRAPE_INTERVAL_MINUTES: 30
+      ENABLE_SCHEDULER: "true"
+      SCRAPER_MODE: server
+      HEALTH_CHECK_PORT: 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - jbowall_network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  jbowall_network:
+    driver: bridge

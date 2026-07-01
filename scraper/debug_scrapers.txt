@@ -1,0 +1,67 @@
+--- vraboti ---
+<li class="col-xl-3 col-md-4 col-sm-6 col-6">
+ <div class="post-bx premium vs-job-listing">
+  <div class="d-flex m-b10">
+   <div class="job-post-company">
+    <a href="/announcements/view/THGJFFG-rabotnik-za-odrzuvanje-" target="blank">
+     <span>
+      <img alt="" src="/resources/upload/ca744a9d4f9d1ed09bacd66241d6f381.jpg"/>
+     </span>
+    </a>
+   </div>
+  </div>
+  <div class="d-flex">
+   <div class="job-post-info">
+    <h6 class="job-title-vs">
+     <a href="/announcements/view/THGJFFG-rabotnik-za-odrzuvanje-" target="blank" title="РАБОТНИК ЗА ОДРЖУВАЊЕ ">
+      РАБОТНИК ЗА ОДРЖУВАЊЕ
+     </a>
+    </h6>
+    <ul>
+     <li>
+      <a href="/announcements/?i=%D0%9F%D1%80%D0%B5%D1%85%D1%80%D0%B0%D0%BD%D0%B1%D0%B5%D0%BD%D0%B0" title="Прехранбена">
+       <i class="fa fa-industry">
+       </i>
+       Прехранбена
+      </a>
+     </li>
+     <li>
+      <a href="/announcements/?r=%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5" title="Скопје">
+       <i class="fa fa-map-marker">
+       </i>
+       Ско
+
+--- thrivity ---
+
+  
+  <div class="app au-target" as-element="router-view" au-target-id="250">
+    <div class="container-fluid job-posts-container" id="job-posts-top">
+        <div class="au-target dp-flex ai-center jc-between language-menu" au-target-id="251">
+            <div class="au-target width-30" au-target-id="252">
+                
+  <div class="form-group">
+    <div class="row mx-0">
+      <div class="col-9 text-left px-0">
+        <label class="au-target" au-target-id="174" for="companyId"></label>
+      </div>
+      <!--anchor-->
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="input-group flex-nowrap">
+          <!--anchor-->
+          <div class="d-flex flex-grow-1 overflow-hidden">
+            <select ref="selectElement" value.bind="value" disabled.bind="isDisabled" style="width:100%;" class="au-target form-control select2-hidden-accessible" au-target-id="180" id="companyId" name="companyId" data-select2-id="companyId" tabindex="-1" aria-hidden="true">
+              <option selected="" value="" data-select2-id="2">Сите компании</option>
+              <option value.bind="option.id" class="au-target" au-target-id="182" value="d000b89b-8a8d-4cb1-9a4c-60aadee786dc">
+                 InPlayer Ltd
+              </option><option value.bind="option.id" class="au-target" au-target-id="182" value="51053963-7ebf-410a-97c5-25b8af2efaa5">
+                 БЛУ БЛЕК ДООЕЛ Скопје
+              </option><option value.bind="option.id" class="au-target" au-target-id="182" value="0a126f35-80f3-43ad-b5f2-c4e0f3298d9e">
+                 ДС СМИТХ АД Скопје
+              </option><option value.bind="option.id" class="au-target" au-target-id="182" value="15d503f1-56c8-4b6a-926b-52268a274938">
+                3 Ем Гроуп Дооел
+              </option><option value.bind="option.id" class="au-target" au-target-id="182" value="0f91a178-271a-4ceb-81c5-fc237edf56e0">
+                ADEVA
+              </option><option value.bind="option.id" class="au-target" au-targ
+

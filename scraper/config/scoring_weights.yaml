@@ -1,0 +1,28 @@
+# Base freshness score (max)
+base_freshness: 10.0
+
+# Decay constant for freshness (e.g., higher means faster decay). 
+# score = max(0, base_freshness * exp(-days_since_posted / decay_constant))
+decay_constant: 14.0
+
+# Cold-start / Quality proxy weights
+quality:
+  has_salary: 8.0
+  has_clear_requirements_section: 4.0
+  company_confidence_high: 6.0
+  description_length_max_score: 10.0
+  description_length_divisor: 50.0
+
+# Source trust multiplier
+source_trust_multiplier: 10.0
+
+# ML Multipliers
+ml:
+  remote_probability: 20.0
+  quality_score: 30.0
+
+# Trend multiplier (if using keywords trend)
+keyword_trend_score: 5.0
+
+# Toggles
+enable_ml_scoring: false

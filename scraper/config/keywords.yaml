@@ -1,0 +1,338 @@
+remote_keywords:
+  - remote
+  - telework
+  - work from home
+  - wfh
+  - во дома
+  - од дома
+  - distanca
+  - дистанца
+
+internship_keywords:
+  - internship
+  - trainee
+  - intern
+  - пракса
+  - стажирање
+  - практикант
+  - студент
+
+junior_keywords:
+  - junior
+  - entry level
+  - џуниор
+  - почетник
+  - почетно ниво
+
+category_keywords:
+  IT:
+    - developer
+    - programmer
+    - engineer
+    - software
+    - devops
+    - python
+    - java
+    - javascript
+    - frontend
+    - backend
+    - fullstack
+    - react
+    - node
+    - програмер
+    - софтвер
+    - девелопер
+    - it
+    - ит
+    - информатика
+    - ict
+    - систем
+    - мрежи
+    - qa
+    - тестер
+    - податоци
+    - data
+    - аналитичар
+    - analyst
+    - net
+    - c#
+    - c++
+    - ios
+    - android
+    - mobile
+    - web
+  Design:
+    - designer
+    - graphic
+    - ui
+    - ux
+    - web design
+    - дизајнер
+    - графички
+    - дизајн
+    - аниматор
+    - video
+    - multimedia
+    - моделирање
+    - 3d
+    - art
+    - креативен
+  Marketing:
+    - marketing
+    - seo
+    - sem
+    - content
+    - social
+    - маркетинг
+    - социјални мрежи
+    - копирајтер
+    - copywriter
+    - pr
+    - односи со јавност
+    - campaign
+    - кампања
+    - дигитален
+    - digital
+    - advertising
+    - рекламирање
+    - презентер
+  Sales:
+    - sales
+    - consultant
+    - account
+    - representative
+    - продажба
+    - продавач
+    - продажен
+    - продажни
+    - комерцијалист
+    - трговски претставник
+    - агент за продажба
+    - b2b
+    - b2c
+    - касиер
+    - касиерка
+    - касиерки
+    - каса
+    - услуга
+    - клиент
+    - клиенти
+    - client
+    - customer
+    - support
+    - поддршка
+    - агент
+    - agent
+    - call center
+    - кол центар
+    - маркет
+    - малопродажба
+  HR:
+    - hr
+    - human resources
+    - recruiter
+    - talent
+    - човечки ресурси
+    - регрутер
+    - кадри
+    - вработување
+  Finance:
+    - accountant
+    - finance
+    - cfo
+    - controller
+    - accounts payable
+    - accounts receivable
+    - сметководител
+    - финансии
+    - ревизор
+    - auditor
+    - економист
+    - банка
+    - благајник
+    - сметководство
+    - accounting
+    - финансов
+    - кредитен
+    - кредитирање
+    - payroll
+  Admin:
+    - admin
+    - administrator
+    - secretary
+    - администратор
+    - администрација
+    - административ
+    - секретар
+    - секретарка
+    - асистент
+    - assistant
+    - офис
+    - office
+    - рецепционер
+    - receptionist
+    - телефонист
+  Management:
+    - management
+    - менаџер
+    - manager
+    - управител
+    - координатор
+    - директор
+    - supervisor
+    - супервизор
+    - раководител
+    - corporate
+  Logistics:
+    - logistics
+    - transport
+    - возач
+    - driver
+    - дистрибутер
+    - логистика
+    - достава
+    - доставувач
+    - доставувачи
+    - склад
+    - магацин
+    - магационер
+    - warehouse
+    - шпедиција
+    - транспорт
+    - курир
+    - виљушкар
+    - вилушкар
+    - вилушкарист
+    - царински
+    - декларант
+    - комбе
+  Production:
+    - production
+    - производство
+    - оператор
+    - оператори
+    - operator
+    - фабрика
+    - погон
+    - материјали
+    - работник
+    - општ работник
+    - општи работници
+    - физички работник
+    - процесни
+  Engineering:
+    - engineering
+    - машински
+    - машинисти
+    - багерист
+    - електро
+    - електричар
+    - електричари
+    - електроничар
+    - електромонтер
+    - electrician
+    - одржување
+    - мајстор
+    - монтер
+    - монтажер
+    - хаусмајстор
+    - инженер
+    - градежен
+    - градежни
+    - архитект
+    - урбанист
+    - клима
+    - технолог
+  Hospitality:
+    - hospitality
+    - угостителство
+    - ресторан
+    - кувар
+    - готвач
+    - chef
+    - cook
+    - келнер
+    - waiter
+    - бартендер
+    - bartender
+    - шанкер
+    - туризам
+    - tourism
+    - хотел
+    - пекар
+    - пекара
+    - слаткар
+    - кафе
+    - салатер
+    - палачинкара
+    - bar
+    - бар
+    - персонал
+    - сезонска
+    - пица
+  Legal:
+    - legal
+    - lawyer
+    - правник
+    - адвокат
+    - право
+    - правен
+  Healthcare:
+    - healthcare
+    - medical
+    - доктор
+    - doctor
+    - медицинска
+    - сестра
+    - nurse
+    - фармацевт
+    - pharmacist
+    - аптека
+    - здравство
+    - стоматолог
+    - терапевт
+    - медицина
+  Cleaning:
+    - cleaning
+    - хигиена
+    - хигиеничар
+    - хигиеничарка
+    - хигиеничари
+    - чистач
+    - собарка
+    - одржување хигиена
+
+location_variants:
+  Skopje:
+    - скопје
+    - skopje
+    - skp
+    - скопие
+  Bitola:
+    - битола
+    - bitola
+    - bt
+  Ohrid:
+    - охрид
+    - ohrid
+    - oh
+  Tetovo:
+    - тетово
+    - tetovo
+    - te
+  Kumanovo:
+    - куманово
+    - kumanovo
+    - ku
+  Prilep:
+    - прилеп
+    - prilep
+    - pp
+  Strumica:
+    - струмица
+    - strumica
+    - sr
+  Veles:
+    - велес
+    - veles
+    - ve

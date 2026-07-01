@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Left: Logo */}
         <div className="flex-1 flex justify-start">
           <Link href="/" className="text-4xl md:text-5xl font-bold tracking-tight text-foreground flex items-baseline hover:opacity-90 transition-opacity">
-            JOBWALL<span className="text-2xl text-primary ml-0.5">.mk</span>
+            JOBWALL<span className="text-2xl ml-0.5">.mk</span>
           </Link>
         </div>
 

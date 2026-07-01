@@ -7,26 +7,11 @@ import { Job } from "@/components/jobs/JobCard";
 
 import { Clock, TrendingUp, Globe, Star } from "lucide-react";
 
+import { getJobs } from "@/lib/data/jobs";
+export const revalidate = 60;
+
 async function fetchJobs(category?: string, remote?: boolean, section?: string, limit?: number, source?: string): Promise<Job[]> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-    
-    const params = new URLSearchParams();
-    if (category) params.append("category", category);
-    if (remote) params.append("remote", "true");
-    if (section) params.append("section", section);
-    if (limit) params.append("limit", limit.toString());
-    if (source) params.append("source", source);
-    
-    const url = `${protocol}://${host}/api/jobs?${params.toString()}`;
-    const res = await fetch(url, { next: { revalidate: 60 } });
-    if (!res.ok) return [];
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch jobs:", error);
-    return [];
-  }
+  return (await getJobs({ category, remote, section, limit, source })) || [];
 }
 
 import SidebarNewsWidget from "@/components/layout/SidebarNewsWidget";

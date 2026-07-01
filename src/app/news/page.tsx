@@ -10,23 +10,11 @@ export const metadata: Metadata = {
   description: "Најнови вести за кариера, вработување, плати и пазар на труд во Македонија.",
 };
 
+import { getNews } from "@/lib/data/news";
+export const revalidate = 60;
+
 async function fetchNews(section?: string, limit: number = 15): Promise<NewsArticle[]> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-
-    const params = new URLSearchParams();
-    if (section) params.append("section", section);
-    params.append("limit", limit.toString());
-
-    const url = `${protocol}://${host}/api/news?${params.toString()}`;
-    const res = await fetch(url, { next: { revalidate: 60 } });
-    if (!res.ok) return [];
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch news:", error);
-    return [];
-  }
+  return (await getNews({ section, limit })) || [];
 }
 
 export default async function NewsPage() {

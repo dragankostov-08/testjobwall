@@ -4,23 +4,11 @@ import JobCard from "@/components/jobs/JobCard";
 import Link from "next/link";
 import { ChevronLeft, GraduationCap } from "lucide-react";
 
+import { getJobs } from "@/lib/data/jobs";
+export const revalidate = 60;
+
 async function fetchInternships(): Promise<Job[]> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-    
-    const params = new URLSearchParams();
-    params.append("search", "пракса");
-    params.append("limit", "50");
-    
-    const url = `${protocol}://${host}/api/jobs?${params.toString()}`;
-    const res = await fetch(url, { next: { revalidate: 60 } });
-    if (!res.ok) return [];
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch internship jobs:", error);
-    return [];
-  }
+  return (await getJobs({ search: "пракса", limit: 50 })) || [];
 }
 
 export default async function InternshipsPage() {

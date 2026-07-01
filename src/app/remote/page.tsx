@@ -4,23 +4,11 @@ import JobCard from "@/components/jobs/JobCard";
 import Link from "next/link";
 import { ChevronLeft, Globe } from "lucide-react";
 
+import { getJobs } from "@/lib/data/jobs";
+export const revalidate = 60;
+
 async function fetchRemoteJobs(): Promise<Job[]> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-    
-    const params = new URLSearchParams();
-    params.append("remote", "true");
-    params.append("limit", "100");
-    
-    const url = `${protocol}://${host}/api/jobs?${params.toString()}`;
-    const res = await fetch(url, { next: { revalidate: 60 } });
-    if (!res.ok) return [];
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch remote jobs:", error);
-    return [];
-  }
+  return (await getJobs({ remote: true, limit: 100 })) || [];
 }
 
 export default async function RemoteJobsPage() {

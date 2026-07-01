@@ -10,21 +10,11 @@ export const metadata = {
   description: "Сите најнови огласи за работа на едно место. Ажурирано во реално време.",
 };
 
+import { getJobs } from "@/lib/data/jobs";
+export const revalidate = 60;
+
 async function fetchLatestJobs(): Promise<Job[]> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-    
-    // Fetch a larger list for the dedicated page (e.g., 20 jobs)
-    const url = `${protocol}://${host}/api/jobs?section=latest&limit=20`;
-    const res = await fetch(url, { next: { revalidate: 60 } });
-    
-    if (!res.ok) return [];
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch latest jobs:", error);
-    return [];
-  }
+  return (await getJobs({ section: "latest", limit: 20 })) || [];
 }
 
 export default async function LatestJobsPage() {

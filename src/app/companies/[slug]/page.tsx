@@ -20,32 +20,16 @@ interface CompanyData {
   similarCompanies: { name: string; slug: string; logo: string | null; jobCount: number }[];
 }
 
+import { getCompany } from "@/lib/data/companies";
+import { getNews } from "@/lib/data/news";
+export const revalidate = 60;
+
 async function fetchCompany(slug: string): Promise<CompanyData | null> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-    const res = await fetch(`${protocol}://${host}/api/companies/${slug}`, { next: { revalidate: 60 } });
-    if (!res.ok) return null;
-    return res.json();
-  } catch {
-    return null;
-  }
+  return await getCompany(slug);
 }
 
 async function fetchRelatedNews(companyName: string): Promise<NewsArticle[]> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-    const res = await fetch(
-      `${protocol}://${host}/api/news?search=${encodeURIComponent(companyName)}&limit=4`,
-      { next: { revalidate: 60 } }
-    );
-    if (!res.ok) return [];
-    const data = await res.json();
-    return Array.isArray(data) ? data : [];
-  } catch {
-    return [];
-  }
+  return (await getNews({ search: companyName, limit: 4 })) || [];
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {

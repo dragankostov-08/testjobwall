@@ -5,47 +5,33 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 
+import { getJobs } from "@/lib/data/jobs";
+export const revalidate = 60;
+
 async function fetchCategoryJobs(category: string): Promise<Job[]> {
-  try {
-    const host = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000";
-    const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-    
-    const params = new URLSearchParams();
-    if (category === 'remote') {
-      params.append("remote", "true");
-    } else {
-      let dbCategory = category;
-      if (category === 'it') dbCategory = "IT";
-      if (category === 'design') dbCategory = "Design";
-      if (category === 'marketing') dbCategory = "Marketing";
-      if (category === 'sales') dbCategory = "Sales";
-      if (category === 'hr') dbCategory = "HR";
-      if (category === 'finance') dbCategory = "Finance";
-      if (category === 'admin') dbCategory = "Admin";
-      if (category === 'management') dbCategory = "Management";
-      if (category === 'logistics') dbCategory = "Logistics";
-      if (category === 'production') dbCategory = "Production";
-      if (category === 'engineering') dbCategory = "Engineering";
-      if (category === 'hospitality') dbCategory = "Hospitality";
-      if (category === 'legal') dbCategory = "Legal";
-      if (category === 'healthcare') dbCategory = "Healthcare";
-      if (category === 'cleaning') dbCategory = "Cleaning";
-      if (category === 'other') dbCategory = "Останато";
-      
-      params.append("category", dbCategory);
-    }
-    
-    // Fetch up to 50 jobs for the category view
-    params.append("limit", "50");
-    
-    const url = `${protocol}://${host}/api/jobs?${params.toString()}`;
-    const res = await fetch(url, { next: { revalidate: 60 } });
-    if (!res.ok) return [];
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch category jobs:", error);
-    return [];
+  if (category === 'remote') {
+    return (await getJobs({ remote: true, limit: 50 })) || [];
   }
+  
+  let dbCategory = category;
+  if (category === 'it') dbCategory = "IT";
+  if (category === 'design') dbCategory = "Design";
+  if (category === 'marketing') dbCategory = "Marketing";
+  if (category === 'sales') dbCategory = "Sales";
+  if (category === 'hr') dbCategory = "HR";
+  if (category === 'finance') dbCategory = "Finance";
+  if (category === 'admin') dbCategory = "Admin";
+  if (category === 'management') dbCategory = "Management";
+  if (category === 'logistics') dbCategory = "Logistics";
+  if (category === 'production') dbCategory = "Production";
+  if (category === 'engineering') dbCategory = "Engineering";
+  if (category === 'hospitality') dbCategory = "Hospitality";
+  if (category === 'legal') dbCategory = "Legal";
+  if (category === 'healthcare') dbCategory = "Healthcare";
+  if (category === 'cleaning') dbCategory = "Cleaning";
+  if (category === 'other') dbCategory = "Останато";
+  
+  return (await getJobs({ category: dbCategory, limit: 50 })) || [];
 }
 
 export default async function CategoryPage({ params }: { params: { slug: string } }) {

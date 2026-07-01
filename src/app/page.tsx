@@ -85,37 +85,44 @@ export default async function Home(
           maxJobs={5}
           hideTitle={true}
         />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+          {/* Index Widget - Full width */}
+          <div className="md:col-span-2 mb-4">
+            <IndexWidget />
+          </div>
 
-        {/* Index Widget */}
-        <IndexWidget />
+          {/* First row of categories */}
+          <CategoryBlock title="Далечински Работи" slug="remote" color="#06b6d4" jobs={remoteJobs} />
+          <CategoryBlock title="IT & Software" slug="it" color="#3b82f6" jobs={itJobs} />
+          
+          {/* Tool Promo 1 - Full width */}
+          <div className="md:col-span-2 my-2">
+            <SalaryCalculatorPromo />
+          </div>
 
-        {/* Tool Promo 1 */}
-        <SalaryCalculatorPromo />
+          {/* More categories */}
+          <CategoryBlock title="Маркетинг" slug="marketing" color="#8b5cf6" jobs={marketingJobs} />
+          <CategoryBlock title="Продажба" slug="sales" color="#10b981" jobs={salesJobs} />
+          <CategoryBlock title="Финансии" slug="finance" color="#ef4444" jobs={financeJobs} />
+          <CategoryBlock title="Администрација" slug="admin" color="#14b8a6" jobs={adminJobs} />
+          
+          {/* Tool Promo 2 - Full width */}
+          <div className="md:col-span-2 my-2">
+            <VacationCalculatorPromo />
+          </div>
 
-        {/* Remote Jobs */}
-        <CategoryBlock title="Далечински Работи" slug="remote" color="#06b6d4" jobs={remoteJobs} />
-
-        {/* Category Blocks — Organized by requested categories */}
-        <CategoryBlock title="IT & Software" slug="it" color="#3b82f6" jobs={itJobs} />
-        
-        {/* Tool Promo 2 */}
-        <VacationCalculatorPromo />
-
-        <CategoryBlock title="Маркетинг" slug="marketing" color="#8b5cf6" jobs={marketingJobs} />
-        <CategoryBlock title="Продажба" slug="sales" color="#10b981" jobs={salesJobs} />
-        <CategoryBlock title="Финансии" slug="finance" color="#ef4444" jobs={financeJobs} />
-        <CategoryBlock title="Администрација" slug="admin" color="#14b8a6" jobs={adminJobs} />
-        <CategoryBlock title="Инженерство и Одржување" slug="engineering" color="#0ea5e9" jobs={engineeringJobs} />
-        <CategoryBlock title="Здравство" slug="healthcare" color="#14b8a6" jobs={healthcareJobs} />
-        <CategoryBlock title="Угостителство" slug="hospitality" color="#eab308" jobs={hospitalityJobs} />
-        <CategoryBlock title="Логистика и Транспорт" slug="logistics" color="#f97316" jobs={logisticsJobs} />
-        <CategoryBlock title="Човечки Ресурси" slug="hr" color="#f59e0b" jobs={hrJobs} />
-        <CategoryBlock title="Дизајн" slug="design" color="#ec4899" jobs={designJobs} />
-        <CategoryBlock title="Менаџмент" slug="management" color="#6366f1" jobs={managementJobs} />
-        <CategoryBlock title="Производство" slug="production" color="#a855f7" jobs={productionJobs} />
-        <CategoryBlock title="Право" slug="legal" color="#64748b" jobs={legalJobs} />
-        <CategoryBlock title="Хигиена" slug="cleaning" color="#38bdf8" jobs={cleaningJobs} />
-        <CategoryBlock title="Останати" slug="other" color="#94a3b8" jobs={otherJobs} />
+          <CategoryBlock title="Инженерство и Одржување" slug="engineering" color="#0ea5e9" jobs={engineeringJobs} />
+          <CategoryBlock title="Здравство" slug="healthcare" color="#14b8a6" jobs={healthcareJobs} />
+          <CategoryBlock title="Угостителство" slug="hospitality" color="#eab308" jobs={hospitalityJobs} />
+          <CategoryBlock title="Логистика и Транспорт" slug="logistics" color="#f97316" jobs={logisticsJobs} />
+          <CategoryBlock title="Човечки Ресурси" slug="hr" color="#f59e0b" jobs={hrJobs} />
+          <CategoryBlock title="Дизајн" slug="design" color="#ec4899" jobs={designJobs} />
+          <CategoryBlock title="Менаџмент" slug="management" color="#6366f1" jobs={managementJobs} />
+          <CategoryBlock title="Производство" slug="production" color="#a855f7" jobs={productionJobs} />
+          <CategoryBlock title="Право" slug="legal" color="#64748b" jobs={legalJobs} />
+          <CategoryBlock title="Хигиена" slug="cleaning" color="#38bdf8" jobs={cleaningJobs} />
+          <CategoryBlock title="Останати" slug="other" color="#94a3b8" jobs={otherJobs} />
+        </div>
       </div>
 
       {/* Right Rail (Widgets) */}

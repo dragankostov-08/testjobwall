@@ -13,19 +13,16 @@ export default function CategoryBlock({ title, slug, color, jobs }: CategoryBloc
   if (jobs.length === 0) return null;
 
   return (
-    <section className="mb-10">
-      <div className="flex items-center mb-6">
+    <section className="w-full">
+      <div className="flex items-center mb-4">
         <Link 
           href={`/category/${slug}`}
-          className="flex items-center justify-between bg-card rounded-xl border border-border overflow-hidden relative h-12 md:h-14 hover:bg-accent transition-all w-full group shadow-md hover:shadow-lg"
+          className="flex items-center bg-[#1e293b] dark:bg-slate-800 rounded-full overflow-hidden relative h-10 md:h-11 hover:bg-slate-700 dark:hover:bg-slate-700 transition-colors w-full group mb-2"
         >
-          <div className="flex items-center">
-            <div className="absolute left-0 top-0 bottom-0 w-3 md:w-4 transition-all group-hover:w-5" style={{ backgroundColor: color }} />
-            <h2 className="text-lg md:text-xl font-bold text-foreground pl-7 md:pl-9 pr-5 md:pr-6 tracking-wide transition-colors">
-              {title}
-            </h2>
-          </div>
-          <span className="text-muted-foreground group-hover:text-foreground group-hover:translate-x-1 transition-all pr-4 md:pr-6">&raquo;</span>
+          <div className="absolute left-0 top-0 bottom-0 w-3 transition-all group-hover:w-4 rounded-l-full" style={{ backgroundColor: color }} />
+          <h2 className="text-[16px] md:text-[18px] font-medium text-slate-100 pl-6 pr-4 tracking-wide flex items-center">
+            {title} <span className="opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 inline-block transition-transform ml-1.5 text-lg">&raquo;</span>
+          </h2>
         </Link>
       </div>
       

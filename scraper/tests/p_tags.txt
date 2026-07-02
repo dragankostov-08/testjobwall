@@ -1,0 +1,102 @@
+--- p 0 (class: ['text-[13px]', 'font-medium', 'text-blue-700']) ---
+Премиум
+--- p 1 (class: ['text-lg', 'max-w-100', 'md:text-2xl', 'job-title-text', 'text-center', 'md:text-start']) ---
+Продажни асистенти / Подготовка и продажба на кафе и храна To-Go
+--- p 2 (class: ['font-semibold', 'text-base', 'md:text-lg', 'text-blue', 'hover:underline', 'cursor-pointer']) ---
+Толлакс ДОО Скопје
+--- p 3 (class: []) ---
+Полно работно време
+--- p 4 (class: ['text-base', 'md:text-xl']) ---
+•
+--- p 5 (class: []) ---
+Трговија (продажба)
+--- p 6 (class: ['text-base', 'md:text-xl']) ---
+•
+--- p 7 (class: []) ---
+Скопје
+--- p 8 (class: []) ---
+Полно работно време
+--- p 9 (class: []) ---
+Трговија (продажба)
+--- p 10 (class: []) ---
+Скопје
+--- p 11 (class: ['text-hot-pink', 'md:text-start', 'text-center', 'mb-4', 'md:mb-0']) ---
+Активен до 10. Јули 2026
+--- p 12 (class: ['text-center']) ---
+
+--- p 13 (class: ['text-center']) ---
+
+--- p 14 (class: ['md:text-2xl', 'text-xl', 'font-semibold', 'mb-4', 'px-2']) ---
+Корисни статии
+--- p 15 (class: ['text-xl', 'font-semibold', 'mb-4', 'px-2']) ---
+За работодавачот
+--- p 16 (class: ['font-semibold', 'text-base', 'line-clamp-2', 'cursor-pointer', 'hover:text-blue-600', 'hover:underline', 'transition-colors']) ---
+Толлакс ДОО Скопје
+--- p 17 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Продажни асистенти
+--- p 18 (class: ['line-clamp-1']) ---
+Скопје
+--- p 19 (class: []) ---
+8 дена
+--- p 20 (class: ['text-[13px]', 'font-semibold']) ---
+Ново
+--- p 21 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Менаџер за продажба во логистика
+--- p 22 (class: ['line-clamp-1']) ---
+Скопје
+--- p 23 (class: []) ---
+14 дена
+--- p 24 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Касиер/ка и Пумпаш на бензинска пумпа
+--- p 25 (class: ['line-clamp-1']) ---
+Скопје
+--- p 26 (class: []) ---
+2 дена
+--- p 27 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Асистент за продажба
+--- p 28 (class: ['line-clamp-1']) ---
+Скопје
+--- p 29 (class: []) ---
+1 ден
+--- p 30 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Продажен Асистент - Скопје (Capitol Mall)
+--- p 31 (class: ['line-clamp-1']) ---
+Скопје
+--- p 32 (class: []) ---
+3 дена
+--- p 33 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Продажен Асистент
+--- p 34 (class: ['line-clamp-1']) ---
+Скопје
+--- p 35 (class: []) ---
+6 дена
+--- p 36 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Касиер - Железара, Бит-Пазар, Арачиново, Петровец
+--- p 37 (class: ['line-clamp-1']) ---
+Скопје
+--- p 38 (class: []) ---
+2 дена
+--- p 39 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Комерцијалист
+--- p 40 (class: ['line-clamp-1']) ---
+Скопје
+--- p 41 (class: []) ---
+Денес
+--- p 42 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Комерцијалист
+--- p 43 (class: ['line-clamp-1']) ---
+Скопје
+--- p 44 (class: []) ---
+Денес
+--- p 45 (class: ['mb-2', 'line-clamp-2', 'job-title-text']) ---
+Оператори/ки - Скопје
+--- p 46 (class: ['line-clamp-1']) ---
+Скопје
+--- p 47 (class: []) ---
+9 дена
+--- p 48 (class: ['text-sm', 'sm:text-base', 'text-gray-500', 'mb-2']) ---
+Креирај профил денес
+--- p 49 (class: ['font-semibold', 'text-xl', 'sm:text-xl', 'mb-4', 'sm:mb-6']) ---
+И овозможи им на компаниите да те пронајдат!
+--- p 50 (class: ['md:text-2xl', 'text-xl', 'font-semibold', 'mb-4', 'px-2']) ---
+Корисни статии

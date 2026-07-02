@@ -13,8 +13,10 @@ def test():
     jobs = scraper.scrape()
     
     print(f"\nExtracted {len(jobs)} jobs:")
+    import dataclasses
     for j in jobs[:5]:
-        print(json.dumps(j.dict(), indent=2, ensure_ascii=False))
+        print(json.dumps(dataclasses.asdict(j), indent=2, ensure_ascii=False))
+
 
 if __name__ == "__main__":
     import codecs

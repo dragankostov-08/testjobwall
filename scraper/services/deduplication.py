@@ -108,7 +108,7 @@ class DeduplicationService:
             
             for job in response.data:
                 existing_title = job.get("title") or ""
-                if fuzz.token_sort_ratio((title or "").lower(), existing_title.lower()) > 75:
+                if fuzz.token_sort_ratio((title or "").lower(), existing_title.lower()) > 90:
                     logger.debug(f"Duplicate found by fuzzy match: '{title}' matches '{existing_title}'")
                     return job["id"]
         except Exception as e:

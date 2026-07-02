@@ -75,26 +75,12 @@ export default function JobCard({ job }: { job: Job }) {
             {job.metadata?.alternate_sources && job.metadata.alternate_sources.length > 0 && (
               <>
                 <span>•</span>
-                <div className="relative z-20 group/dropdown">
-                  <button className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-full bg-slate-800/60 text-blue-400 hover:bg-slate-800 hover:text-blue-300 border border-slate-700/50 transition-colors cursor-pointer">
-                    +{job.metadata.alternate_sources.length} извори &raquo;
-                  </button>
-                  <div className="absolute top-full mt-1.5 left-0 bg-popover text-popover-foreground shadow-lg rounded-md p-2 min-w-[140px] opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all flex flex-col gap-1.5 border border-border z-30">
-                    <div className="text-[10px] uppercase font-semibold text-muted-foreground mb-0.5 px-1">Исто така достапен на:</div>
-                    {job.metadata.alternate_sources.map((src, i) => (
-                      <a 
-                        key={i} 
-                        href={src.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-xs hover:bg-accent hover:text-accent-foreground px-2 py-1.5 rounded transition-colors text-foreground block truncate"
-                        title={src.name}
-                      >
-                        {src.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
+                <Link 
+                  href={`/job/${job.id}`} 
+                  className="relative z-20 inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-full bg-slate-800/60 text-blue-400 hover:bg-slate-800 hover:text-blue-300 border border-slate-700/50 transition-colors cursor-pointer"
+                >
+                  +{job.metadata.alternate_sources.length} извори &raquo;
+                </Link>
               </>
             )}
           </div>

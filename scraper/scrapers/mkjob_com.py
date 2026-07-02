@@ -144,12 +144,25 @@ class MkjobComScraper(BaseScraper):
                             res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
                             if res.status_code == 200:
                                 detail_soup = BeautifulSoup(res.text, 'html.parser')
-                                title_text = detail_soup.title.text if detail_soup.title else ""
-                                if " | MKJOB" in title_text:
-                                    # Example: Сметководител - Sigma-SB | MKJOB
-                                    parts = title_text.replace(" | MKJOB", "").split(" - ")
-                                    if len(parts) >= 2:
-                                        company_name = parts[-1].strip()
+                                
+                                # First try to get it from the company link in the detail page
+                                p_company = detail_soup.find('p', class_=lambda c: c and 'text-blue' in c and 'hover:underline' in c)
+                                if p_company and p_company.text.strip():
+                                    company_name = p_company.text.strip()
+                                else:
+                                    # Fallback to title parsing
+                                    title_text = detail_soup.title.text if detail_soup.title else ""
+                                    if " | MKJOB" in title_text:
+                                        # Example: Сметководител - Sigma-SB | MKJOB
+                                        parts = title_text.replace(" | MKJOB", "").split(" - ")
+                                        if len(parts) >= 2:
+                                            company_name = parts[-1].strip()
+                                    else:
+                                        parts = title_text.split(" - ")
+                                        if len(parts) >= 2:
+                                            company_name = parts[-1].strip()
+                                            
+                                # Some titles are just "Company Name | MKJOB" if missing job title, etc.
                         except Exception as e:
                             logger.warning(f"Error fetching detail page for {url}: {e}", source=self.source_name)
 
